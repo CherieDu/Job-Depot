@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViewController+CandidateSignUpViewController.h"
-            timestampString = "457716035.364121"
+            timestampString = "457717986.471722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "@interface CandidateSignUpViewController"
             landmarkType = "2">
          </BreakpointContent>

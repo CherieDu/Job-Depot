@@ -7,6 +7,7 @@
 //
 
 #import "candidateloginViewController.h"
+
 #import "Parse/Parse.h"
 
 @interface candidateloginViewController ()
@@ -25,6 +26,7 @@
 //    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
 //    self.logInView.logo = logoView; // logo can be any UIView
     
+
 }
 
 
@@ -44,12 +46,26 @@
 //                              | PFLogInFieldsDismissButton
 //                              );
     
-    
+        
+    // Do any additional setup after loading the view.
 }
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)logInViewController:(PFLogInViewController *)controller
+               didLogInUser:(PFUser *)user {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
@@ -63,3 +79,33 @@
 */
 
 @end
+
+
+
+
+//@implementation candidateloginViewController : PFSignUpViewController
+//
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    self.view.backgroundColor = [UIColor darkGrayColor];
+//    
+//    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
+//    self.logInView.logo = logoView; // logo can be any UIView
+//}
+//@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

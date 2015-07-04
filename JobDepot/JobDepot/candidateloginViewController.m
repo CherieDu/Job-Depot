@@ -17,24 +17,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    [self.logInView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"SignInUp2.JPG"]]];
+    [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]]];
     
-        
-    // Do any additional setup after loading the view.
+    
+    
+//    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
+//    self.logInView.logo = logoView; // logo can be any UIView
+    
 }
+
 
 - (void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+//
+//    
+//    PFLogInViewController *logInController = [[PFLogInViewController alloc] init];
+////    logInController.delegate = self;
+//    [self presentViewController:logInController animated:YES completion:nil];
+//    
+//    logInController.fields = (PFLogInFieldsUsernameAndPassword
+//                              | PFLogInFieldsLogInButton
+//                              | PFLogInFieldsSignUpButton
+//                              | PFLogInFieldsPasswordForgotten
+//                              | PFLogInFieldsDismissButton
+//                              );
     
-    PFLogInViewController *logInController = [[PFLogInViewController alloc] init];
-    logInController.delegate = self;
-    [self presentViewController:logInController animated:YES completion:nil];
-    
-    logInController.fields = (PFLogInFieldsUsernameAndPassword
-                              | PFLogInFieldsLogInButton
-                              | PFLogInFieldsSignUpButton
-                              | PFLogInFieldsPasswordForgotten
-                              | PFLogInFieldsDismissButton);
     
 }
 

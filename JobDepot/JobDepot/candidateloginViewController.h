@@ -10,8 +10,8 @@
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
 
-
 @interface candidateloginViewController : PFLogInViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+
 
 @end
 

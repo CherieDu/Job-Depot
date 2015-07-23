@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9027A4411B5EE1C800CAFED4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9027A4401B5EE1C800CAFED4 /* SearchViewController.m */; };
+		9027A4471B5EE23800CAFED4 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9027A4461B5EE23800CAFED4 /* ResumeViewController.m */; };
+		903F9B9A1B52C27700A2E6A1 /* CandidateUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903F9B991B52C27700A2E6A1 /* CandidateUITabBarController.m */; };
+		904BC5971B48485800E194A2 /* SearchJobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BC5961B48485800E194A2 /* SearchJobsViewController.m */; };
 		905D45021B45953C00FE43C6 /* candidateloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905D45011B45953C00FE43C6 /* candidateloginViewController.m */; };
 		905D45051B4595A500FE43C6 /* EmployerLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905D45041B4595A500FE43C6 /* EmployerLoginViewController.m */; };
 		905D45091B459BA000FE43C6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 905D45081B459BA000FE43C6 /* logo.png */; };
@@ -51,6 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9027A43F1B5EE1C800CAFED4 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9027A4401B5EE1C800CAFED4 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		9027A4451B5EE23800CAFED4 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeViewController.h; sourceTree = "<group>"; };
+		9027A4461B5EE23800CAFED4 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeViewController.m; sourceTree = "<group>"; };
+		903F9B981B52C27700A2E6A1 /* CandidateUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateUITabBarController.h; sourceTree = "<group>"; };
+		903F9B991B52C27700A2E6A1 /* CandidateUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateUITabBarController.m; sourceTree = "<group>"; };
+		904BC5951B48485800E194A2 /* SearchJobsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchJobsViewController.h; sourceTree = "<group>"; };
+		904BC5961B48485800E194A2 /* SearchJobsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchJobsViewController.m; sourceTree = "<group>"; };
 		905D45001B45953C00FE43C6 /* candidateloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = candidateloginViewController.h; path = JobDepot/candidateloginViewController.h; sourceTree = "<group>"; };
 		905D45011B45953C00FE43C6 /* candidateloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = candidateloginViewController.m; path = JobDepot/candidateloginViewController.m; sourceTree = "<group>"; };
 		905D45031B4595A500FE43C6 /* EmployerLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployerLoginViewController.h; sourceTree = "<group>"; };
@@ -131,6 +143,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9027A43E1B5EDD4D00CAFED4 /* Tabbars */ = {
+			isa = PBXGroup;
+			children = (
+				9027A43F1B5EE1C800CAFED4 /* SearchViewController.h */,
+				9027A4401B5EE1C800CAFED4 /* SearchViewController.m */,
+				9027A4451B5EE23800CAFED4 /* ResumeViewController.h */,
+				9027A4461B5EE23800CAFED4 /* ResumeViewController.m */,
+			);
+			name = Tabbars;
+			sourceTree = "<group>";
+		};
+		904BC5941B4847D400E194A2 /* Candidate Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				904BC5951B48485800E194A2 /* SearchJobsViewController.h */,
+				904BC5961B48485800E194A2 /* SearchJobsViewController.m */,
+			);
+			name = "Candidate Tabs";
+			sourceTree = "<group>";
+		};
 		908B6CBF1B482D31007E932F /* Candidate Sign In & Up */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,12 +216,16 @@
 		F65F98D11B458E4E007FBEC6 /* JobDepot */ = {
 			isa = PBXGroup;
 			children = (
+				9027A43E1B5EDD4D00CAFED4 /* Tabbars */,
+				904BC5941B4847D400E194A2 /* Candidate Tabs */,
 				908B6CBF1B482D31007E932F /* Candidate Sign In & Up */,
 				F65F98D61B458E4E007FBEC6 /* AppDelegate.h */,
 				F65F98D71B458E4E007FBEC6 /* AppDelegate.m */,
 				F65F98D91B458E4E007FBEC6 /* ViewController.h */,
 				F65F98DA1B458E4E007FBEC6 /* ViewController.m */,
 				F65F98DC1B458E4E007FBEC6 /* Main.storyboard */,
+				903F9B981B52C27700A2E6A1 /* CandidateUITabBarController.h */,
+				903F9B991B52C27700A2E6A1 /* CandidateUITabBarController.m */,
 				905D45031B4595A500FE43C6 /* EmployerLoginViewController.h */,
 				905D45041B4595A500FE43C6 /* EmployerLoginViewController.m */,
 				F65F98DF1B458E4E007FBEC6 /* Images.xcassets */,
@@ -330,8 +366,12 @@
 				F65F98DB1B458E4E007FBEC6 /* ViewController.m in Sources */,
 				F65F98D81B458E4E007FBEC6 /* AppDelegate.m in Sources */,
 				905D45021B45953C00FE43C6 /* candidateloginViewController.m in Sources */,
+				9027A4471B5EE23800CAFED4 /* ResumeViewController.m in Sources */,
+				903F9B9A1B52C27700A2E6A1 /* CandidateUITabBarController.m in Sources */,
+				9027A4411B5EE1C800CAFED4 /* SearchViewController.m in Sources */,
 				905D45051B4595A500FE43C6 /* EmployerLoginViewController.m in Sources */,
 				F65F98D51B458E4E007FBEC6 /* main.m in Sources */,
+				904BC5971B48485800E194A2 /* SearchJobsViewController.m in Sources */,
 				908B6CC31B4830A9007E932F /* ViewController+CandidateSignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

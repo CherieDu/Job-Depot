@@ -23,6 +23,9 @@
 		908AD60E1B618850002A3389 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908AD60D1B618850002A3389 /* HistoryViewController.m */; };
 		908AD6101B62C6C5002A3389 /* head image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 908AD60F1B62C6C5002A3389 /* head image.jpg */; };
 		908AD6131B62DE92002A3389 /* MoreInfoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */; };
+		90F08B091B62F21C0012B53F /* EditResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F08B081B62F21C0012B53F /* EditResumeViewController.m */; };
+		90F08B141B62F7820012B53F /* CareerBuilder.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */; };
+		90F08B151B62F78B0012B53F /* libCareerBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F08B111B62F7750012B53F /* libCareerBuilder.a */; };
 		F65F98D51B458E4E007FBEC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98D41B458E4E007FBEC6 /* main.m */; };
 		F65F98D81B458E4E007FBEC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98D71B458E4E007FBEC6 /* AppDelegate.m */; };
 		F65F98DB1B458E4E007FBEC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98DA1B458E4E007FBEC6 /* ViewController.m */; };
@@ -53,6 +56,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		90F08B101B62F7750012B53F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8523BA2816E4E18C0085A6CA;
+			remoteInfo = CareerBuilder;
+		};
+		90F08B121B62F7750012B53F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8523BA3916E4E18C0085A6CA;
+			remoteInfo = CareerBuilderTests;
+		};
+		90F08B161B62F7940012B53F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8523BA2716E4E18C0085A6CA;
+			remoteInfo = CareerBuilder;
+		};
 		F65F98E91B458E4E007FBEC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F65F98C71B458E4E007FBEC6 /* Project object */;
@@ -94,6 +118,9 @@
 		908AD60F1B62C6C5002A3389 /* head image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "head image.jpg"; sourceTree = "<group>"; };
 		908AD6111B62DE92002A3389 /* MoreInfoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoWebViewController.h; sourceTree = "<group>"; };
 		908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoWebViewController.m; sourceTree = "<group>"; };
+		90F08B071B62F21C0012B53F /* EditResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditResumeViewController.h; sourceTree = "<group>"; };
+		90F08B081B62F21C0012B53F /* EditResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditResumeViewController.m; sourceTree = "<group>"; };
+		90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareerBuilder.xcodeproj; path = "../../../../../../../../../Desktop/CareerBuilder-API-IOS-master/CareerBuilder.xcodeproj"; sourceTree = "<group>"; };
 		F65F98CF1B458E4E007FBEC6 /* JobDepot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobDepot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65F98D31B458E4E007FBEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65F98D41B458E4E007FBEC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +161,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F08B151B62F78B0012B53F /* libCareerBuilder.a in Frameworks */,
+				90F08B141B62F7820012B53F /* CareerBuilder.xcodeproj in Frameworks */,
 				F65F99121B459086007FBEC6 /* Accounts.framework in Frameworks */,
 				F65F99131B459086007FBEC6 /* AudioToolbox.framework in Frameworks */,
 				F65F99141B459086007FBEC6 /* AVFoundation.framework in Frameworks */,
@@ -178,6 +207,8 @@
 				908AD60D1B618850002A3389 /* HistoryViewController.m */,
 				908AD6111B62DE92002A3389 /* MoreInfoWebViewController.h */,
 				908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */,
+				90F08B071B62F21C0012B53F /* EditResumeViewController.h */,
+				90F08B081B62F21C0012B53F /* EditResumeViewController.m */,
 			);
 			name = Tabbars;
 			sourceTree = "<group>";
@@ -226,9 +257,19 @@
 			name = LinkedInHelper;
 			sourceTree = "<group>";
 		};
+		90F08B0C1B62F7740012B53F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90F08B111B62F7750012B53F /* libCareerBuilder.a */,
+				90F08B131B62F7750012B53F /* CareerBuilderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F65F98C61B458E4E007FBEC6 = {
 			isa = PBXGroup;
 			children = (
+				90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */,
 				908AD5EA1B6187C0002A3389 /* LinkedInIOSHelper */,
 				F65F98D11B458E4E007FBEC6 /* JobDepot */,
 				F65F98EB1B458E4E007FBEC6 /* JobDepotTests */,
@@ -323,6 +364,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				90F08B171B62F7940012B53F /* PBXTargetDependency */,
 			);
 			name = JobDepot;
 			productName = JobDepot;
@@ -376,6 +418,12 @@
 			mainGroup = F65F98C61B458E4E007FBEC6;
 			productRefGroup = F65F98D01B458E4E007FBEC6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 90F08B0C1B62F7740012B53F /* Products */;
+					ProjectRef = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F65F98CE1B458E4E007FBEC6 /* JobDepot */,
@@ -383,6 +431,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		90F08B111B62F7750012B53F /* libCareerBuilder.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCareerBuilder.a;
+			remoteRef = 90F08B101B62F7750012B53F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90F08B131B62F7750012B53F /* CareerBuilderTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareerBuilderTests.octest;
+			remoteRef = 90F08B121B62F7750012B53F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F65F98CD1B458E4E007FBEC6 /* Resources */ = {
@@ -428,6 +493,7 @@
 				908AD5F91B618803002A3389 /* PermissionFullProfileFields.m in Sources */,
 				908AD6091B618811002A3389 /* LinkedInAuthorizationViewController.m in Sources */,
 				F65F98D51B458E4E007FBEC6 /* main.m in Sources */,
+				90F08B091B62F21C0012B53F /* EditResumeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +508,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		90F08B171B62F7940012B53F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareerBuilder;
+			targetProxy = 90F08B161B62F7940012B53F /* PBXContainerItemProxy */;
+		};
 		F65F98EA1B458E4E007FBEC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F65F98CE1B458E4E007FBEC6 /* JobDepot */;

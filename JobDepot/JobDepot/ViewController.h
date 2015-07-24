@@ -12,7 +12,8 @@
 @interface ViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet UIButton *candidatebtn;
 @property (weak, nonatomic) IBOutlet UIButton *employerbtn;
-    
+
+
 
 @end
 

@@ -22,6 +22,10 @@
                   clientKey:@"OWpTtoVASI9NNK1kUONX4VuL53HooO2uIYveUTEq"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    [CBGlobalCredentials globalInstance].developerKey = @"WDHP2JJ6BGKN0KPPS6B9";
+    [CBGlobalCredentials globalInstance].siteID = @"kushal venkat";
     return YES;
 }
 

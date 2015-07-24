@@ -18,13 +18,16 @@
 @synthesize email, name, headline, industry, city, country, avatar;
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
-    
+
     UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(gotoNext:)];
     self.navigationItem.rightBarButtonItem = editButton;
     
-    [self displayData];
     
+    [self displayData];
+
+
     
     // Do any additional setup after loading the view.
 }

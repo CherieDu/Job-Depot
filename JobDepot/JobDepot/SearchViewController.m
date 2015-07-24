@@ -14,9 +14,34 @@
 
 @implementation SearchViewController
 
+NSArray *jobs;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    CBSearchObject *so = [[CBSearchObject alloc] init];
+    CBJob *tmpJob;
+    CBJobSearchResult *searchResult = [CBJobSearch jobsFromAPIWithSearchObject:[CBSearchObject searchObjectWithKeywords:@"software" AndLocation:@"Pittsburgh"]];
+    
+    NSLog(@"Search Results: count=%i and numJobs = %i and xx=%i", searchResult.totalCount, searchResult.results.count, [searchResult countOfResults]);
+    
+    // Initialize table data
+    
+    
+    //    so.jobTitle = @"Software";
+    //    so.location = @"pittsburgh";
+    
+    
+    for(tmpJob in searchResult.results)
+    {
+        //        NSLog(@"job title: %@", tmpJob.jobTitle);
+        //        NSLog(@"Company: %@", tmpJob.company);
+        //        NSLog(@"CompanyImageURL: %@", tmpJob.companyImageURL);
+        //        NSLog(@"job URL: %@", tmpJob.jobDetailsURL);
+        
+        NSArray *search = tmpJob.jobTitle;
+        jobs = [[NSArray alloc]initWithObjects:tmpJob.jobTitle, nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,9 +65,9 @@
         // Assign our sign up controller to be displayed from the login controller
         [logInViewController setSignUpController:signUpViewController];
         logInViewController.fields = (PFLogInFieldsUsernameAndPassword
-                                  | PFLogInFieldsLogInButton
-                                  | PFLogInFieldsSignUpButton
-                                  | PFLogInFieldsPasswordForgotten);
+                                      | PFLogInFieldsLogInButton
+                                      | PFLogInFieldsSignUpButton
+                                      | PFLogInFieldsPasswordForgotten);
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
         
@@ -120,16 +145,56 @@
 - (void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController {
     NSLog(@"User dismissed the signUpViewController");
 }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [jobs count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"searchresults";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [jobs objectAtIndex:indexPath.row];
+    return cell;
+}
+
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
+- (IBAction)searchJobs:(id)sender {
+    CBSearchObject *so = [[CBSearchObject alloc] init];
+    NSString *txt = self.jobtitleTextField.text;
+    NSString *txt2 = self.joblocTextField.text;
+    
+    CBJobSearchResult *searchResult = [CBJobSearch jobsFromAPIWithSearchObject:[CBSearchObject searchObjectWithKeywords:txt AndLocation:txt2]];
+    
+    NSLog(@"Search Results: count=%i and numJobs = %i and xx=%i", searchResult.totalCount, searchResult.results.count, [searchResult countOfResults]);
+    
+    CBJob *tmpJob;
+    for(tmpJob in searchResult.results)
+    {
+        NSLog(@"job title: %@", tmpJob.jobTitle);
+        NSLog(@"Company: %@", tmpJob.company);
+        NSLog(@"CompanyImageURL: %@", tmpJob.companyImageURL);
+        NSLog(@"job URL: %@", tmpJob.jobDetailsURL);
+    }
+    
+    [self.view endEditing:YES];
 }
-*/
 
 @end

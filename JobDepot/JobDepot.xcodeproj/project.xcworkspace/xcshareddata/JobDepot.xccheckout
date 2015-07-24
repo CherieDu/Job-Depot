@@ -14,11 +14,11 @@
 		<string>https://github.com/CherieDu/Job-Depot.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>JobDepot/JobDepot.xcodeproj</string>
+	<string>Job-Depot-master/JobDepot/JobDepot.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A062D8B060E112E3A96739E5C12A0ED4235569F9</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/CherieDu/Job-Depot.git</string>

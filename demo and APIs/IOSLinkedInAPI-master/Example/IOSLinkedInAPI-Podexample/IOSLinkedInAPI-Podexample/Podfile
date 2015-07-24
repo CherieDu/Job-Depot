@@ -1,0 +1,6 @@
+platform :ios, "6.1"
+pod 'LinkedinIOSHelper', '~> 1.0.4'
+
+pod 'IOSLinkedInAPI', :git => 'https://github.com/jeyben/IOSLinkedInAPI', :commit => '7b777b16867c713ed660c1d3711f83b76388ea99'
+
+

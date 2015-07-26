@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y5f-Uv-eb0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Resume-->
@@ -285,7 +286,7 @@
         <!--Account-->
         <scene sceneID="GE2-LO-kQY">
             <objects>
-                <viewController id="6et-X3-bS7" sceneMemberID="viewController">
+                <viewController id="6et-X3-bS7" customClass="AccountViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lb5-uf-an9"/>
                         <viewControllerLayoutGuide type="bottom" id="mRB-Yj-gyI"/>
@@ -293,10 +294,110 @@
                     <view key="view" contentMode="scaleToFill" id="VVt-S9-xGD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="59" width="128" height="128"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAv-JB-1Lx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="32" y="289" width="85" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ot8-VU-GVK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="32" y="360" width="85" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKu-Cz-rss">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="122" y="360" width="248" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piJ-5u-Qfu">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="122" y="289" width="248" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mRB-Yj-gyI" firstAttribute="top" secondItem="ot8-VU-GVK" secondAttribute="bottom" constant="170" id="Dhy-3x-hrV"/>
+                            <constraint firstItem="piJ-5u-Qfu" firstAttribute="leading" secondItem="hAv-JB-1Lx" secondAttribute="trailing" constant="5" id="Dpw-UU-rdf"/>
+                            <constraint firstItem="hAv-JB-1Lx" firstAttribute="leading" secondItem="VVt-S9-xGD" secondAttribute="leadingMargin" constant="16" id="G72-4z-Ty0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="piJ-5u-Qfu" secondAttribute="trailing" constant="14" id="Iup-SC-vu2"/>
+                            <constraint firstItem="WKu-Cz-rss" firstAttribute="leading" secondItem="ot8-VU-GVK" secondAttribute="trailing" constant="5" id="LPx-5K-ZC9"/>
+                            <constraint firstItem="ot8-VU-GVK" firstAttribute="top" secondItem="hAv-JB-1Lx" secondAttribute="bottom" constant="50" id="NcI-vi-7zQ"/>
+                            <constraint firstItem="ot8-VU-GVK" firstAttribute="leading" secondItem="VVt-S9-xGD" secondAttribute="leadingMargin" constant="16" id="gx2-oV-95M"/>
+                            <constraint firstItem="hAv-JB-1Lx" firstAttribute="top" secondItem="lb5-uf-an9" secondAttribute="bottom" constant="269" id="lcE-Y2-UI2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WKu-Cz-rss" secondAttribute="trailing" constant="14" id="vhJ-Th-xvc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2L4-YX-7Ny"/>
+                                <exclude reference="hAv-JB-1Lx"/>
+                                <exclude reference="ot8-VU-GVK"/>
+                                <exclude reference="WKu-Cz-rss"/>
+                                <exclude reference="piJ-5u-Qfu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="G72-4z-Ty0"/>
+                                <exclude reference="lcE-Y2-UI2"/>
+                                <exclude reference="Dpw-UU-rdf"/>
+                                <exclude reference="Iup-SC-vu2"/>
+                                <exclude reference="NcI-vi-7zQ"/>
+                                <exclude reference="gx2-oV-95M"/>
+                                <exclude reference="LPx-5K-ZC9"/>
+                                <exclude reference="vhJ-Th-xvc"/>
+                                <exclude reference="Dhy-3x-hrV"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2L4-YX-7Ny"/>
+                                <include reference="hAv-JB-1Lx"/>
+                                <include reference="ot8-VU-GVK"/>
+                                <include reference="WKu-Cz-rss"/>
+                                <include reference="piJ-5u-Qfu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="G72-4z-Ty0"/>
+                                <include reference="lcE-Y2-UI2"/>
+                                <include reference="Dpw-UU-rdf"/>
+                                <include reference="Iup-SC-vu2"/>
+                                <include reference="NcI-vi-7zQ"/>
+                                <include reference="gx2-oV-95M"/>
+                                <include reference="LPx-5K-ZC9"/>
+                                <include reference="vhJ-Th-xvc"/>
+                                <include reference="Dhy-3x-hrV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="Gender Neutral User-25.png" id="dxE-KH-yE8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="avatarAcount" destination="2L4-YX-7Ny" id="60i-Qa-QlR"/>
+                        <outlet property="emailAccount" destination="WKu-Cz-rss" id="5pY-jR-Jy6"/>
+                        <outlet property="usernameAccount" destination="piJ-5u-Qfu" id="XN1-Lz-btI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4t-OL-HFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

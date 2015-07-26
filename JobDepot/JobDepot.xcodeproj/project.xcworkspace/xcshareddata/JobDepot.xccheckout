@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E8C386E0-D737-4BD5-A88C-DD1A3B8ECF30</string>
 	<key>IDESourceControlProjectName</key>
-	<string>JobDepot</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A062D8B060E112E3A96739E5C12A0ED4235569F9</key>
 		<string>https://github.com/CherieDu/Job-Depot.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>JobDepot/JobDepot.xcodeproj</string>
+	<string>JobDepot/JobDepot.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A062D8B060E112E3A96739E5C12A0ED4235569F9</key>

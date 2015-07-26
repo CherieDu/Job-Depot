@@ -297,6 +297,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="30" width="128" height="128"/>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piJ-5u-Qfu">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -319,12 +322,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="2L4-YX-7Ny" secondAttribute="trailing" constant="120" id="1MR-Uj-XBk"/>
                             <constraint firstAttribute="centerX" secondItem="2L4-YX-7Ny" secondAttribute="centerX" id="7gE-0a-hd0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2L4-YX-7Ny" secondAttribute="trailing" constant="120" id="BbX-Of-PQL"/>
+                            <constraint firstItem="2L4-YX-7Ny" firstAttribute="leading" secondItem="VVt-S9-xGD" secondAttribute="leadingMargin" constant="120" id="Ez4-Mu-4vx"/>
                             <constraint firstItem="piJ-5u-Qfu" firstAttribute="top" secondItem="2L4-YX-7Ny" secondAttribute="bottom" constant="102" id="FiI-QE-sxw"/>
                             <constraint firstAttribute="centerX" secondItem="piJ-5u-Qfu" secondAttribute="centerX" id="HNx-xw-gew"/>
                             <constraint firstAttribute="centerY" secondItem="piJ-5u-Qfu" secondAttribute="centerY" id="I2T-3X-AgA"/>
-                            <constraint firstItem="2L4-YX-7Ny" firstAttribute="leading" secondItem="VVt-S9-xGD" secondAttribute="leadingMargin" constant="120" id="M9O-tS-e92"/>
                             <constraint firstItem="2L4-YX-7Ny" firstAttribute="top" secondItem="lb5-uf-an9" secondAttribute="bottom" constant="39" id="P5q-mz-jsl"/>
                             <constraint firstItem="WKu-Cz-rss" firstAttribute="top" secondItem="piJ-5u-Qfu" secondAttribute="bottom" constant="49" id="UWN-0w-6An"/>
                             <constraint firstItem="mRB-Yj-gyI" firstAttribute="top" secondItem="WKu-Cz-rss" secondAttribute="bottom" constant="171" id="hLp-oo-h7Q"/>
@@ -337,9 +340,9 @@
                                 <exclude reference="WKu-Cz-rss"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1MR-Uj-XBk"/>
                                 <exclude reference="7gE-0a-hd0"/>
-                                <exclude reference="BbX-Of-PQL"/>
-                                <exclude reference="M9O-tS-e92"/>
+                                <exclude reference="Ez4-Mu-4vx"/>
                                 <exclude reference="P5q-mz-jsl"/>
                                 <exclude reference="FiI-QE-sxw"/>
                                 <exclude reference="HNx-xw-gew"/>
@@ -356,9 +359,9 @@
                                 <include reference="WKu-Cz-rss"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1MR-Uj-XBk"/>
                                 <include reference="7gE-0a-hd0"/>
-                                <include reference="BbX-Of-PQL"/>
-                                <include reference="M9O-tS-e92"/>
+                                <include reference="Ez4-Mu-4vx"/>
                                 <include reference="P5q-mz-jsl"/>
                                 <include reference="FiI-QE-sxw"/>
                                 <include reference="HNx-xw-gew"/>

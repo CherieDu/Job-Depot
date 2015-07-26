@@ -7,7 +7,7 @@
 //
 
 #import "AccountViewController.h"
-
+#import "ViewController.h"
 @interface AccountViewController ()
 
 @end
@@ -28,7 +28,6 @@
     [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInfo, NSError *error) {
         if (!userInfo) {
             NSLog(@"The getFirstObject request failed.");
-            
             
         } else {
             // The find succeeded.
@@ -51,9 +50,36 @@
         }
     }];
 
-    
+//    [self setUpNavi];
+
     
 }
+
+//- (void)setUpNavi
+//{
+//    // set up title, left and right top buttons of the navigation
+//    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Sign Out" style:UIBarButtonItemStyleBordered target:self action:@selector(signOutApp)];
+//    
+////    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:self action:@selector(editProfile)];
+//}
+
+//- (void)signOutApp
+//{
+//    [PFUser logOut];
+//    
+//    // Instantiate our custom log in view controller
+//    ViewController *logInCtr = [self setUpLogIn];
+//    
+//    // Instantiate our custom sign up view controller
+//    ViewController *signUpCtr = [self setUpSignUp];
+//    
+//    // Link the sign up view controller
+//    [logInCtr setSignUpController:signUpCtr];
+//    
+//    // Present log in view controller
+//    [self presentViewController:logInCtr animated:YES completion:nil];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -70,10 +96,27 @@
 }
 */
 
+//
+//- (ViewController *) setUpLogIn
+//{
+//    ViewController *logInCtr = [[ViewController alloc] init];
+//    [logInCtr setDelegate:self];
+//    [logInCtr setFacebookPermissions:[NSArray arrayWithObjects:@"friends_about_me", nil]];
+//    [logInCtr setFields: PFLogInFieldsDefault
+//     | PFLogInFieldsSignUpButton
+//     | PFLogInFieldsDismissButton];
+//    
+//    return logInCtr;
+//}
+//
+//- (ViewController *) setUpSignUp
+//{
+//    ViewController *signUpCtr = [[ViewController alloc] init];
+//    [signUpCtr setDelegate:self];
+//    [signUpCtr setFields: PFSignUpFieldsDefault | PFSignUpFieldsAdditional];
+//    
+//    return signUpCtr;
+//}
 
-- (IBAction)signOutBtn:(id)sender {
-    [PFUser logOut];
-    [self.navigationController popViewControllerAnimated:YES];
 
-}
 @end

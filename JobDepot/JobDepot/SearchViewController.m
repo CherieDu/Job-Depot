@@ -128,9 +128,14 @@ NSMutableArray *jobs;
     
     if (![PFUser currentUser]) { // No user logged in
         
-        // Create the log in view controller
+        MyLoginViewController *logInViewController = [[MyLoginViewController alloc] init];
+//        logInViewController.signUpController = [[MySignUpViewController alloc] init];
         
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+        
+        
+        // Create the log in view controller
+//        
+//        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
         
         
         
@@ -140,7 +145,7 @@ NSMutableArray *jobs;
         
         // Create the sign up view controller
         
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+        MySignUpViewController *signUpViewController = [[MySignUpViewController alloc] init];
         
         [signUpViewController setDelegate:self]; // Set ourselves as the delegate
         

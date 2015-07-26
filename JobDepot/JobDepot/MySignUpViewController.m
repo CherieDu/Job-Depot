@@ -1,22 +1,24 @@
 //
-//  CandidateLoginViewController.m
+//  MySignUpViewController.m
 //  JobDepot
 //
 //  Created by Chunyue Du on 7/26/15.
 //  Copyright (c) 2015 team4. All rights reserved.
 //
 
-#import "CandidateLoginViewController.h"
+#import "MySignUpViewController.h"
 
-@interface CandidateLoginViewController ()
+@interface MySignUpViewController ()
 
 @end
 
-@implementation CandidateLoginViewController
+@implementation MySignUpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
+    self.signUpView.logo = logoView; // logo can be any UIView
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

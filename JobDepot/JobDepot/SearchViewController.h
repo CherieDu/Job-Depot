@@ -10,7 +10,8 @@
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
 #import <CareerBuilder/CBJobSeekerFramework.h>
-
+#import "MyLoginViewController.h"
+#import "MySignUpViewController.h"
 
 @interface SearchViewController : UIViewController<PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate,UITableViewDelegate, UITableViewDataSource>
 

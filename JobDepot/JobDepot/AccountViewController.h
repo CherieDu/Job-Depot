@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarAcount;
 @property (weak, nonatomic) IBOutlet UILabel *usernameAccount;
 @property (weak, nonatomic) IBOutlet UILabel *emailAccount;
-- (IBAction)signOutBtn:(id)sender;
+
 
 
 @end

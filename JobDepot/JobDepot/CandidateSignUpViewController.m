@@ -1,18 +1,18 @@
 //
-//  EmployerLoginViewController.m
+//  CandidateSignUpViewController.m
 //  JobDepot
 //
-//  Created by Chunyue Du on 7/2/15.
+//  Created by Chunyue Du on 7/26/15.
 //  Copyright (c) 2015 team4. All rights reserved.
 //
 
-#import "EmployerLoginViewController.h"
+#import "CandidateSignUpViewController.h"
 
-@interface EmployerLoginViewController ()
+@interface CandidateSignUpViewController ()
 
 @end
 
-@implementation EmployerLoginViewController
+@implementation CandidateSignUpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

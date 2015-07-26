@@ -1,22 +1,28 @@
 //
-//  CandidateUITabBarController.m
+//  MyLoginViewController.m
 //  JobDepot
 //
-//  Created by Chunyue Du on 7/12/15.
+//  Created by Chunyue Du on 7/26/15.
 //  Copyright (c) 2015 team4. All rights reserved.
 //
 
-#import "CandidateUITabBarController.h"
+#import "MyLoginViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface CandidateUITabBarController ()
+@interface MyLoginViewController ()
 
 @end
 
-@implementation CandidateUITabBarController
+@implementation MyLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
+    self.logInView.logo = logoView; // logo can be any UIView
+    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

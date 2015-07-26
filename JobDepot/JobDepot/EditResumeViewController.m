@@ -27,7 +27,7 @@
 }
 
 - (void)saveData:(id)sender{
-    [self performSegueWithIdentifier:@"myView" sender:self];
+    [self performSegueWithIdentifier:@"backtoResume" sender:self];
 }
 /*
 #pragma mark - Navigation

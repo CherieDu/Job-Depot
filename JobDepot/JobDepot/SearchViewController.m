@@ -70,7 +70,6 @@ NSArray *jobs;
                                       | PFLogInFieldsPasswordForgotten);
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
-        
     }
 }
 

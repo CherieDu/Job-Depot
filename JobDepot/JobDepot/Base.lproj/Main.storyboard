@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJv-mV-vat" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3328.5" y="-645"/>
+            <point key="canvasLocation" x="3682.5" y="-505"/>
         </scene>
         <!--More Info Web View Controller-->
         <scene sceneID="uTK-X3-xv5">
@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buX-7V-v1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4021.5" y="-121"/>
+            <point key="canvasLocation" x="5137.5" y="-77"/>
         </scene>
         <!--Edit Resume View Controller-->
         <scene sceneID="vA6-z0-7qE">
@@ -295,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="dxE-KH-yE8"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="Gender Neutral User-25.png" id="dxE-KH-yE8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4t-OL-HFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,7 +314,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MjK-iJ-ZqE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MjK-iJ-ZqE">
                                 <rect key="frame" x="23" y="85" width="551" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -322,7 +322,7 @@
                                     <rect key="frame" x="16" y="72" width="363" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhz-IB-qza">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhz-IB-qza">
                                 <rect key="frame" x="23" y="137" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -331,7 +331,7 @@
                                     <rect key="frame" x="-209" y="124" width="106" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dym-8n-HeM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dym-8n-HeM">
                                 <rect key="frame" x="145" y="133" width="429" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -339,7 +339,7 @@
                                     <rect key="frame" x="122" y="120" width="257" height="30"/>
                                 </variation>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-aw-Oij">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-aw-Oij">
                                 <rect key="frame" x="23" y="228" width="551" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -368,7 +368,7 @@
                                     <rect key="frame" x="16" y="124" width="87" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prD-bT-PBP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prD-bT-PBP">
                                 <rect key="frame" x="277" y="190" width="48" height="30"/>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,10 +424,10 @@
             </objects>
             <point key="canvasLocation" x="3477" y="-1317"/>
         </scene>
-        <!--CandidateUI Tab Bar Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="Upg-fX-UbB">
             <objects>
-                <tabBarController id="y5f-Uv-eb0" customClass="CandidateUITabBarController" sceneMemberID="viewController">
+                <tabBarController id="y5f-Uv-eb0" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="C9O-iv-7Tb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -445,29 +445,11 @@
             </objects>
             <point key="canvasLocation" x="1821" y="-288"/>
         </scene>
-        <!--Employer Login View Controller-->
-        <scene sceneID="Blt-JM-OID">
-            <objects>
-                <viewController id="Qmq-9c-tdW" customClass="EmployerLoginViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7GU-rF-Trt"/>
-                        <viewControllerLayoutGuide type="bottom" id="9fu-p9-5aa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SKw-bQ-Oow">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zk-Wc-rkf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1252" y="1709"/>
-        </scene>
         <!--Resume-->
         <scene sceneID="Wqm-T1-Zeg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="It3-lJ-rlJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Resume" id="zAM-ZG-rGp"/>
+                    <tabBarItem key="tabBarItem" title="Resume" image="Resume-25.png" id="zAM-ZG-rGp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Qp-p9-YVd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -503,6 +485,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Gender Neutral User-25.png" width="25" height="25"/>
+        <image name="Resume-25.png" width="25" height="25"/>
         <image name="head image.jpg" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>

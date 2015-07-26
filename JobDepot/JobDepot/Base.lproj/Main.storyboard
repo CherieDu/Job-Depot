@@ -263,17 +263,6 @@
                     <view key="view" contentMode="scaleToFill" id="cxp-LY-j9N">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTp-LO-F4i">
-                                <rect key="frame" x="228" y="285" width="145" height="30"/>
-                                <state key="normal" title="Connect Via Linkedin">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnConnectTapped:" destination="hZX-EF-heh" eventType="touchUpInside" id="C9E-tR-lGU"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="6Jw-Hj-Ees"/>
@@ -283,7 +272,7 @@
             </objects>
             <point key="canvasLocation" x="3523" y="299"/>
         </scene>
-        <!--View Controller-->
+        <!--Account-->
         <scene sceneID="QDv-C9-BNs">
             <objects>
                 <viewController id="77M-qm-sWj" sceneMemberID="viewController">
@@ -346,6 +335,8 @@
                             </mask>
                         </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="Gender Neutral User-25.png" id="bn1-HK-QaL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-vq-cxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -367,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLL-en-mHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="2219"/>
+            <point key="canvasLocation" x="2319" y="2173"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="G7t-E7-g1T">
@@ -385,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-wC-cPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2433" y="1532"/>
+            <point key="canvasLocation" x="2590.5" y="1478"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0pa-az-2Bp">
@@ -400,6 +391,7 @@
                     <connections>
                         <segue destination="Bva-Us-Gcg" kind="relationship" relationship="viewControllers" id="UTH-Dq-ro1"/>
                         <segue destination="wkj-4q-ZrQ" kind="relationship" relationship="viewControllers" id="BFw-h3-6tq"/>
+                        <segue destination="77M-qm-sWj" kind="relationship" relationship="viewControllers" id="bXz-Zu-LV9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xc6-W9-8J1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -430,7 +422,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="76" y="359" width="248" height="21"/>
+                                    <rect key="frame" x="76" y="333" width="248" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piJ-5u-Qfu">
@@ -448,9 +440,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="432" width="248" height="21"/>
+                                    <rect key="frame" x="76" y="381" width="248" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4T-Gx-hPM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.82689466150000002" green="1" blue="0.77923901129999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.19474684049999999" green="0.36178335700000003" blue="0.92450237270000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="126" y="438" width="148" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="signOutBtn:" destination="6et-X3-bS7" eventType="touchUpInside" id="3Wk-O9-4RL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -471,6 +477,7 @@
                                 <exclude reference="WKu-Cz-rss"/>
                                 <exclude reference="piJ-5u-Qfu"/>
                                 <exclude reference="1re-gZ-y9x"/>
+                                <exclude reference="z4T-Gx-hPM"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="1MR-Uj-XBk"/>
@@ -491,6 +498,7 @@
                                 <include reference="WKu-Cz-rss"/>
                                 <include reference="piJ-5u-Qfu"/>
                                 <include reference="1re-gZ-y9x"/>
+                                <include reference="z4T-Gx-hPM"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="1MR-Uj-XBk"/>
@@ -511,12 +519,13 @@
                     <connections>
                         <outlet property="avatarAcount" destination="2L4-YX-7Ny" id="60i-Qa-QlR"/>
                         <outlet property="emailAccount" destination="WKu-Cz-rss" id="5pY-jR-Jy6"/>
+                        <outlet property="signOutBtn" destination="z4T-Gx-hPM" id="3fi-Lk-RG5"/>
                         <outlet property="usernameAccount" destination="piJ-5u-Qfu" id="XN1-Lz-btI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4t-OL-HFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2559" y="740"/>
+            <point key="canvasLocation" x="2358" y="727"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="pVE-O4-285">
@@ -586,14 +595,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prD-bT-PBP">
                                 <rect key="frame" x="277" y="190" width="48" height="30"/>
-                                <state key="normal" title="Search">
+                                <state key="normal" title="Advanced Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="173" y="158" width="48" height="30"/>
+                                    <rect key="frame" x="173" y="158" width="121" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="searchJobs:" destination="w02-oC-777" eventType="touchUpInside" id="7Sz-1a-ivN"/>
+                                    <segue destination="2Ap-v4-rrY" kind="show" id="PbH-Ff-SIP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -639,6 +649,58 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3477" y="-1317"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="cPK-2V-rAy">
+            <objects>
+                <viewController id="2Ap-v4-rrY" customClass="searchTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vm4-2M-fkt"/>
+                        <viewControllerLayoutGuide type="bottom" id="JuT-i1-CEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KvV-4Q-obC">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N7c-yR-X9k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchcell" id="Cz9-0t-B8L">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cz9-0t-B8L" id="N86-uI-I37">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Ap-v4-rrY" id="Q5J-cy-J5x"/>
+                                    <outlet property="delegate" destination="2Ap-v4-rrY" id="dbp-hT-2dJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="N7c-yR-X9k"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="N7c-yR-X9k"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="searchtables" destination="N7c-yR-X9k" id="6kh-bn-Wb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zj3-BH-eIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4218" y="-1323"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lVW-PP-qzm">

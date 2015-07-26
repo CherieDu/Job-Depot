@@ -70,4 +70,10 @@
 }
 */
 
+
+- (IBAction)signOutBtn:(id)sender {
+    [PFUser logOut];
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 @end

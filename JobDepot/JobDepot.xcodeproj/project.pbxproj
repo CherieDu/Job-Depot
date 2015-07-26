@@ -28,6 +28,7 @@
 		908AD6101B62C6C5002A3389 /* head image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 908AD60F1B62C6C5002A3389 /* head image.jpg */; };
 		908AD6131B62DE92002A3389 /* MoreInfoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */; };
 		90BC77361B65747B003B7089 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77351B65747B003B7089 /* AccountViewController.m */; };
+		90BC773C1B65996C003B7089 /* searchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC773A1B65996C003B7089 /* searchTableViewController.m */; };
 		90F08B091B62F21C0012B53F /* EditResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F08B081B62F21C0012B53F /* EditResumeViewController.m */; };
 		90F08B141B62F7820012B53F /* CareerBuilder.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */; };
 		90F08B151B62F78B0012B53F /* libCareerBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F08B111B62F7750012B53F /* libCareerBuilder.a */; };
@@ -129,6 +130,8 @@
 		908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoWebViewController.m; sourceTree = "<group>"; };
 		90BC77341B65747B003B7089 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		90BC77351B65747B003B7089 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		90BC773A1B65996C003B7089 /* searchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchTableViewController.m; sourceTree = "<group>"; };
+		90BC773B1B65996C003B7089 /* searchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchTableViewController.h; sourceTree = "<group>"; };
 		90F08B071B62F21C0012B53F /* EditResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditResumeViewController.h; sourceTree = "<group>"; };
 		90F08B081B62F21C0012B53F /* EditResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditResumeViewController.m; sourceTree = "<group>"; };
 		90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareerBuilder.xcodeproj; path = "../../../../../../../../../Desktop/CareerBuilder-API-IOS-master/CareerBuilder.xcodeproj"; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 		9027A43E1B5EDD4D00CAFED4 /* Tabbars */ = {
 			isa = PBXGroup;
 			children = (
+				90BC773A1B65996C003B7089 /* searchTableViewController.m */,
+				90BC773B1B65996C003B7089 /* searchTableViewController.h */,
 				9027A43F1B5EE1C800CAFED4 /* SearchViewController.h */,
 				9027A4401B5EE1C800CAFED4 /* SearchViewController.m */,
 				9027A4451B5EE23800CAFED4 /* ResumeViewController.h */,
@@ -512,6 +517,7 @@
 				908AD5FB1B618803002A3389 /* PermissionNetworkFields.m in Sources */,
 				908AD5F81B618803002A3389 /* PermissionBasicProfileFields.m in Sources */,
 				908AD60A1B618811002A3389 /* LinkedInConnectionHandler.m in Sources */,
+				90BC773C1B65996C003B7089 /* searchTableViewController.m in Sources */,
 				908AD5F91B618803002A3389 /* PermissionFullProfileFields.m in Sources */,
 				908AD6091B618811002A3389 /* LinkedInAuthorizationViewController.m in Sources */,
 				F65F98D51B458E4E007FBEC6 /* main.m in Sources */,

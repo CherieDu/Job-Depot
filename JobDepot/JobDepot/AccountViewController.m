@@ -20,7 +20,9 @@
 //    // Do any additional setup after loading the view.
     
     PFUser *user = [PFUser currentUser];
-    usernameAccount.text = user.username;
+    NSString * nsUsername = [NSString stringWithFormat:@"Username: %@", user.username];
+
+    usernameAccount.text = nsUsername;
     PFQuery *query = [PFQuery queryWithClassName:@"LIUserInfo"];
     [query whereKey:@"userName" equalTo:user.username];
     [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInfo, NSError *error) {
@@ -30,8 +32,9 @@
             
         } else {
             // The find succeeded.
-            
-            emailAccount.text = userInfo[@"emailAddress"];
+            NSString * nsEmail = [NSString stringWithFormat:@"Email: %@", userInfo[@"emailAddress"]];
+
+            emailAccount.text = nsEmail;
 
             
             if (userInfo[@"pictureUrls"][@"values"][0]){

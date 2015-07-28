@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _linkedInPage.scalesPageToFit = YES;
+    _linkedInPage.frame=self.view.bounds;
 //     Do any additional setup after loading the view.
         PFUser *user = [PFUser currentUser];
         PFQuery *query = [PFQuery queryWithClassName:@"LIUserInfo"];
@@ -30,8 +32,7 @@
                 NSURL *url = [NSURL URLWithString:fullURL];
                 NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
                 [_linkedInPage loadRequest:requestObj];
-                
-                
+
                 
                 //          _city.text = userInfo[@"numConnections"];
                 NSLog(@"Successfully open the more info url.");

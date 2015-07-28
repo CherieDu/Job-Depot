@@ -282,6 +282,8 @@
                     <view key="view" contentMode="scaleToFill" id="1od-IH-DRs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
+=======
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posted Jobs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="des-Ee-W8H">
                                 <rect key="frame" x="16" y="79" width="368" height="26"/>
@@ -320,9 +322,11 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+>>>>>>> 49ab80ea85091c5890f037a2ab630fb2528a9836
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Post jobs history" id="iMr-Tf-Rlv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="mF6-Ae-gkf"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="stQ-mP-rbU">
                             <connections>
                                 <segue destination="Bva-Us-Gcg" kind="push" id="ysC-ba-CE2"/>

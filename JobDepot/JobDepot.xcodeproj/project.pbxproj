@@ -28,6 +28,7 @@
 		908AD6131B62DE92002A3389 /* MoreInfoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */; };
 		909B81811B67FE8A00CEEF79 /* Strike Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 909B81801B67FE8A00CEEF79 /* Strike Filled-25.png */; };
 		909B81831B67FEFD00CEEF79 /* Add Rule-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 909B81821B67FEFD00CEEF79 /* Add Rule-25.png */; };
+		909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B81871B68070D00CEEF79 /* PostJobViewController.m */; };
 		90BC77361B65747B003B7089 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77351B65747B003B7089 /* AccountViewController.m */; };
 		90BC773C1B65996C003B7089 /* searchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC773A1B65996C003B7089 /* searchTableViewController.m */; };
 		90BC77461B65A06A003B7089 /* CandidateLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77451B65A06A003B7089 /* CandidateLoginViewController.m */; };
@@ -137,6 +138,8 @@
 		908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoWebViewController.m; sourceTree = "<group>"; };
 		909B81801B67FE8A00CEEF79 /* Strike Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Strike Filled-25.png"; sourceTree = "<group>"; };
 		909B81821B67FEFD00CEEF79 /* Add Rule-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add Rule-25.png"; sourceTree = "<group>"; };
+		909B81861B68070D00CEEF79 /* PostJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostJobViewController.h; sourceTree = "<group>"; };
+		909B81871B68070D00CEEF79 /* PostJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostJobViewController.m; sourceTree = "<group>"; };
 		90BC77341B65747B003B7089 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		90BC77351B65747B003B7089 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		90BC773A1B65996C003B7089 /* searchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchTableViewController.m; sourceTree = "<group>"; };
@@ -233,20 +236,8 @@
 		9027A43E1B5EDD4D00CAFED4 /* Tabbars */ = {
 			isa = PBXGroup;
 			children = (
-				90BC773A1B65996C003B7089 /* searchTableViewController.m */,
-				90BC773B1B65996C003B7089 /* searchTableViewController.h */,
-				9027A43F1B5EE1C800CAFED4 /* SearchViewController.h */,
-				9027A4401B5EE1C800CAFED4 /* SearchViewController.m */,
-				9027A4451B5EE23800CAFED4 /* ResumeViewController.h */,
-				9027A4461B5EE23800CAFED4 /* ResumeViewController.m */,
-				908AD60C1B618850002A3389 /* HistoryViewController.h */,
-				908AD60D1B618850002A3389 /* HistoryViewController.m */,
-				908AD6111B62DE92002A3389 /* MoreInfoWebViewController.h */,
-				908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */,
-				90F08B071B62F21C0012B53F /* EditResumeViewController.h */,
-				90F08B081B62F21C0012B53F /* EditResumeViewController.m */,
-				90BC77341B65747B003B7089 /* AccountViewController.h */,
-				90BC77351B65747B003B7089 /* AccountViewController.m */,
+				909B81851B68069D00CEEF79 /* Employer */,
+				909B81841B68069700CEEF79 /* Candidate */,
 			);
 			name = Tabbars;
 			sourceTree = "<group>";
@@ -315,6 +306,36 @@
 		909B817F1B67FD5D00CEEF79 /* Employer */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Employer;
+			sourceTree = "<group>";
+		};
+		909B81841B68069700CEEF79 /* Candidate */ = {
+			isa = PBXGroup;
+			children = (
+				90BC773A1B65996C003B7089 /* searchTableViewController.m */,
+				90BC773B1B65996C003B7089 /* searchTableViewController.h */,
+				9027A43F1B5EE1C800CAFED4 /* SearchViewController.h */,
+				9027A4401B5EE1C800CAFED4 /* SearchViewController.m */,
+				9027A4451B5EE23800CAFED4 /* ResumeViewController.h */,
+				9027A4461B5EE23800CAFED4 /* ResumeViewController.m */,
+				908AD60C1B618850002A3389 /* HistoryViewController.h */,
+				908AD60D1B618850002A3389 /* HistoryViewController.m */,
+				908AD6111B62DE92002A3389 /* MoreInfoWebViewController.h */,
+				908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */,
+				90F08B071B62F21C0012B53F /* EditResumeViewController.h */,
+				90F08B081B62F21C0012B53F /* EditResumeViewController.m */,
+				90BC77341B65747B003B7089 /* AccountViewController.h */,
+				90BC77351B65747B003B7089 /* AccountViewController.m */,
+			);
+			name = Candidate;
+			sourceTree = "<group>";
+		};
+		909B81851B68069D00CEEF79 /* Employer */ = {
+			isa = PBXGroup;
+			children = (
+				909B81861B68070D00CEEF79 /* PostJobViewController.h */,
+				909B81871B68070D00CEEF79 /* PostJobViewController.m */,
 			);
 			name = Employer;
 			sourceTree = "<group>";
@@ -569,6 +590,7 @@
 				9027A4471B5EE23800CAFED4 /* ResumeViewController.m in Sources */,
 				908AD60E1B618850002A3389 /* HistoryViewController.m in Sources */,
 				90BC77521B65A281003B7089 /* MySignUpViewController.m in Sources */,
+				909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */,
 				908AD6081B618811002A3389 /* LinkedInAppSettings.m in Sources */,
 				9027A4411B5EE1C800CAFED4 /* SearchViewController.m in Sources */,
 				90BC77491B65A088003B7089 /* CandidateSignUpViewController.m in Sources */,

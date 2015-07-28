@@ -147,6 +147,34 @@
             </objects>
             <point key="canvasLocation" x="2740" y="-72.893333333333331"/>
         </scene>
+        <!--Jobsweb View Controller-->
+        <scene sceneID="Juz-pM-UYV">
+            <objects>
+                <viewController id="m87-qO-0Xd" customClass="jobswebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NmE-h7-sYM"/>
+                        <viewControllerLayoutGuide type="bottom" id="H1p-Co-3tC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8s-zX-uY6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzY-zJ-Yzv">
+                                <rect key="frame" x="0.0" y="116" width="320" height="466"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qgu-em-0pD"/>
+                    <connections>
+                        <outlet property="webView" destination="CzY-zJ-Yzv" id="RHd-JQ-KwR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hM-Jz-P2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659" y="-1249"/>
+        </scene>
         <!--Edit Resume View Controller-->
         <scene sceneID="vA6-z0-7qE">
             <objects>
@@ -702,12 +730,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchcell" id="Cz9-0t-B8L">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="searchcell" id="Cz9-0t-B8L">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cz9-0t-B8L" id="N86-uI-I37">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="m87-qO-0Xd" kind="push" id="DED-fn-tdG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

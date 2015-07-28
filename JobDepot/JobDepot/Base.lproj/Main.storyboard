@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zhS-er-toS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -906,8 +905,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3BP-Qx-XZj"/>
-        <segue reference="ysC-ba-CE2"/>
-        <segue reference="h27-Ae-9NX"/>
+        <segue reference="1Fh-sg-12O"/>
+        <segue reference="YYZ-gT-Td8"/>
+        <segue reference="UTH-Dq-ro1"/>
     </inferredMetricsTieBreakers>
 </document>

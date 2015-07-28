@@ -7,7 +7,8 @@
 //
 
 #import <ParseUI/ParseUI.h>
-
+#import <Parse/Parse.h>
+#import "MyLoginViewController.h"
 @interface MySignUpViewController : PFSignUpViewController
 
 @end

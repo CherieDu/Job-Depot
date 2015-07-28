@@ -7,6 +7,8 @@
 //
 
 #import "MySignUpViewController.h"
+#import "MyLoginViewController.h"
+
 
 @interface MySignUpViewController ()
 
@@ -19,12 +21,16 @@
     UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
     self.signUpView.logo = logoView; // logo can be any UIView
     // Do any additional setup after loading the view from its nib.
+    // Check if user is logged in
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

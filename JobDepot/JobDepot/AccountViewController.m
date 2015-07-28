@@ -119,4 +119,10 @@
 //}
 
 
+- (IBAction)logoutBtn:(id)sender {
+    [PFUser logOut];
+    PFUser *currentUser = [PFUser currentUser]; // this will now be nil
+    
+    
+}
 @end

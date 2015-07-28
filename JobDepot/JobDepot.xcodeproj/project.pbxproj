@@ -31,8 +31,6 @@
 		909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B81871B68070D00CEEF79 /* PostJobViewController.m */; };
 		90BC77361B65747B003B7089 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77351B65747B003B7089 /* AccountViewController.m */; };
 		90BC773C1B65996C003B7089 /* searchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC773A1B65996C003B7089 /* searchTableViewController.m */; };
-		90BC77461B65A06A003B7089 /* CandidateLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77451B65A06A003B7089 /* CandidateLoginViewController.m */; };
-		90BC77491B65A088003B7089 /* CandidateSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77481B65A088003B7089 /* CandidateSignUpViewController.m */; };
 		90BC774D1B65A267003B7089 /* MyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC774B1B65A267003B7089 /* MyLoginViewController.m */; };
 		90BC774E1B65A267003B7089 /* MyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BC774C1B65A267003B7089 /* MyLoginViewController.xib */; };
 		90BC77521B65A281003B7089 /* MySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77501B65A281003B7089 /* MySignUpViewController.m */; };
@@ -144,10 +142,6 @@
 		90BC77351B65747B003B7089 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		90BC773A1B65996C003B7089 /* searchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchTableViewController.m; sourceTree = "<group>"; };
 		90BC773B1B65996C003B7089 /* searchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchTableViewController.h; sourceTree = "<group>"; };
-		90BC77441B65A06A003B7089 /* CandidateLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateLoginViewController.h; sourceTree = "<group>"; };
-		90BC77451B65A06A003B7089 /* CandidateLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateLoginViewController.m; sourceTree = "<group>"; };
-		90BC77471B65A088003B7089 /* CandidateSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateSignUpViewController.h; sourceTree = "<group>"; };
-		90BC77481B65A088003B7089 /* CandidateSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateSignUpViewController.m; sourceTree = "<group>"; };
 		90BC774A1B65A267003B7089 /* MyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginViewController.h; sourceTree = "<group>"; };
 		90BC774B1B65A267003B7089 /* MyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginViewController.m; sourceTree = "<group>"; };
 		90BC774C1B65A267003B7089 /* MyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLoginViewController.xib; sourceTree = "<group>"; };
@@ -289,10 +283,6 @@
 		909B817D1B67FCEE00CEEF79 /* Candidate */ = {
 			isa = PBXGroup;
 			children = (
-				90BC77441B65A06A003B7089 /* CandidateLoginViewController.h */,
-				90BC77451B65A06A003B7089 /* CandidateLoginViewController.m */,
-				90BC77471B65A088003B7089 /* CandidateSignUpViewController.h */,
-				90BC77481B65A088003B7089 /* CandidateSignUpViewController.m */,
 				90BC774A1B65A267003B7089 /* MyLoginViewController.h */,
 				90BC774B1B65A267003B7089 /* MyLoginViewController.m */,
 				90BC774C1B65A267003B7089 /* MyLoginViewController.xib */,
@@ -593,7 +583,6 @@
 				909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */,
 				908AD6081B618811002A3389 /* LinkedInAppSettings.m in Sources */,
 				9027A4411B5EE1C800CAFED4 /* SearchViewController.m in Sources */,
-				90BC77491B65A088003B7089 /* CandidateSignUpViewController.m in Sources */,
 				908AD60B1B618811002A3389 /* LinkedInServiceManager.m in Sources */,
 				908AD5FA1B618803002A3389 /* PermissionEmailFields.m in Sources */,
 				90BC77361B65747B003B7089 /* AccountViewController.m in Sources */,
@@ -602,7 +591,6 @@
 				908AD5F81B618803002A3389 /* PermissionBasicProfileFields.m in Sources */,
 				908AD60A1B618811002A3389 /* LinkedInConnectionHandler.m in Sources */,
 				90BC774D1B65A267003B7089 /* MyLoginViewController.m in Sources */,
-				90BC77461B65A06A003B7089 /* CandidateLoginViewController.m in Sources */,
 				90BC773C1B65996C003B7089 /* searchTableViewController.m in Sources */,
 				908AD5F91B618803002A3389 /* PermissionFullProfileFields.m in Sources */,
 				908AD6091B618811002A3389 /* LinkedInAuthorizationViewController.m in Sources */,

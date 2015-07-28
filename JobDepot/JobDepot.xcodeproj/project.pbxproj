@@ -81,6 +81,11 @@
 		F65F991D1B459086007FBEC6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F990F1B459086007FBEC6 /* Social.framework */; };
 		F65F991E1B459086007FBEC6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F99101B459086007FBEC6 /* StoreKit.framework */; };
 		F65F991F1B459086007FBEC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F99111B459086007FBEC6 /* SystemConfiguration.framework */; };
+<<<<<<< HEAD
+=======
+		F68A3AE41B6841E1008209DC /* libCareerBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A3AE11B6841D8008209DC /* libCareerBuilder.a */; };
+		F68A3AE91B6845D9008209DC /* jobswebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68A3AE81B6845D9008209DC /* jobswebViewController.m */; };
+>>>>>>> 260985be5a0917da83e346212e9cbf742ecfe20c
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +219,12 @@
 		F65F990F1B459086007FBEC6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F65F99101B459086007FBEC6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F65F99111B459086007FBEC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+<<<<<<< HEAD
+=======
+		F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareerBuilder.xcodeproj; path = "../../../../Downloads/CareerBuilder-API-IOS-master/CareerBuilder.xcodeproj"; sourceTree = "<group>"; };
+		F68A3AE71B6845D9008209DC /* jobswebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jobswebViewController.h; sourceTree = "<group>"; };
+		F68A3AE81B6845D9008209DC /* jobswebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jobswebViewController.m; sourceTree = "<group>"; };
+>>>>>>> 260985be5a0917da83e346212e9cbf742ecfe20c
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +355,8 @@
 				90F08B081B62F21C0012B53F /* EditResumeViewController.m */,
 				90BC77341B65747B003B7089 /* AccountViewController.h */,
 				90BC77351B65747B003B7089 /* AccountViewController.m */,
+				F68A3AE71B6845D9008209DC /* jobswebViewController.h */,
+				F68A3AE81B6845D9008209DC /* jobswebViewController.m */,
 			);
 			name = Candidate;
 			sourceTree = "<group>";
@@ -674,7 +687,11 @@
 				909B81C61B68473200CEEF79 /* CBEmployeeType.m in Sources */,
 				909B81B41B6846FC00CEEF79 /* CBLocation.m in Sources */,
 				908AD5F91B618803002A3389 /* PermissionFullProfileFields.m in Sources */,
+<<<<<<< HEAD
 				909B81C51B68473200CEEF79 /* CBEducationCode.m in Sources */,
+=======
+				F68A3AE91B6845D9008209DC /* jobswebViewController.m in Sources */,
+>>>>>>> 260985be5a0917da83e346212e9cbf742ecfe20c
 				908AD6091B618811002A3389 /* LinkedInAuthorizationViewController.m in Sources */,
 				909B81B61B6846FC00CEEF79 /* CBTestimonial.m in Sources */,
 				909B81A11B6846CE00CEEF79 /* CBCompany.m in Sources */,

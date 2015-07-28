@@ -29,11 +29,9 @@
 @implementation SearchViewController
 
 
-
 NSMutableArray *jobs;
-
-
-
+NSMutableArray *jobtitles;
+NSString *jobtitle;
 
 
 - (void)viewDidLoad {
@@ -42,7 +40,37 @@ NSMutableArray *jobs;
     
     // Do any additional setup after loading the view.
     
+    jobs = [[NSMutableArray alloc] initWithCapacity:100];
+    // Do any additional setup after loading the view.
+    PFObject *postedjobs = [PFObject objectWithClassName:@"PostedJob"];
+    PFQuery *query = [PFQuery queryWithClassName:@"PostedJob"];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *postedjobs, NSError *error) {
+        if (!postedjobs) {
+            NSLog(@"failed.");
+            
+        } else {
+            jobtitle = postedjobs[@"title"];
+            NSLog(@"title: %@", jobtitle);
+            [jobs addObject:jobtitle];
+            NSLog(@"inside arrrrr '%@'",jobs);
+        }
+    }];
     
+    NSLog(@"outside arrrrr '%@'",jobs);
+    
+    
+    //    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"company = 'Google'"];
+    //    PFQuery *query = [PFQuery queryWithClassName:@"PostedJobs" predicate:predicate];
+    //    NSArray* scoreArray = [query findObjects];
+    //    [jobs addObject:scoreArray];
+    
+    
+    //
+    //    NSString *jobtitle = postedjobs[@"employerName"];
+    //    NSLog(@"title: %@", jobtitle);
+    
+    //   [jobs addObject:jobtitle];
+
     
     CBSearchObject *so = [[CBSearchObject alloc] init];
     
@@ -58,20 +86,13 @@ NSMutableArray *jobs;
     
     NSLog(@"Search Results: count=%i and numJobs = %i and xx=%i", searchResult.totalCount, searchResult.results.count, [searchResult countOfResults]);
     
-    
-    
+
     //    Initialize table data
-    
-    
-    
     
     
     so.jobTitle = @"Software";
     
     so.location = @"pittsburgh";
-    
-    
-    
     
     
     for(tmpJob in searchResult.results)
@@ -124,7 +145,7 @@ NSMutableArray *jobs;
     
     [super viewDidAppear:animated];
     
-    
+    NSLog(@"in view did appear arrrrr '%@'",jobs);
     
     if (![PFUser currentUser]) { // No user logged in
         
@@ -444,10 +465,7 @@ NSMutableArray *jobs;
     return cell;
     
 }
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
-}
+
 
 
 @end

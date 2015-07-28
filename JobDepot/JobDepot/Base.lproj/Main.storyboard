@@ -655,13 +655,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="120" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="120" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="49" width="120" height="120"/>
+                                </variation>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKu-Cz-rss">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="359" width="368" height="21"/>
+                                    <rect key="frame" x="16" y="298" width="368" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piJ-5u-Qfu">
@@ -670,7 +676,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="289.5" width="368" height="20.5"/>
+                                    <rect key="frame" x="16" y="241" width="368" height="20.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a candidate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1re-gZ-y9x">
@@ -679,7 +685,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="413" width="368" height="21"/>
+                                    <rect key="frame" x="16" y="346" width="368" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s4-kn-b97">
@@ -689,37 +695,31 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="473" width="368" height="30"/>
+                                    <rect key="frame" x="16" y="419" width="368" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="logoutBtn:" destination="6et-X3-bS7" eventType="touchUpInside" id="wqH-5u-bi6"/>
                                     <segue destination="zhS-er-toS" kind="show" id="1Fh-sg-12O"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="120" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="140" y="88" width="120" height="120"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="2L4-YX-7Ny"/>
                                 <exclude reference="WKu-Cz-rss"/>
                                 <exclude reference="piJ-5u-Qfu"/>
                                 <exclude reference="1re-gZ-y9x"/>
                                 <exclude reference="7s4-kn-b97"/>
-                                <exclude reference="2L4-YX-7Ny"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="2L4-YX-7Ny"/>
                                 <include reference="WKu-Cz-rss"/>
                                 <include reference="piJ-5u-Qfu"/>
                                 <include reference="1re-gZ-y9x"/>
                                 <include reference="7s4-kn-b97"/>
-                                <include reference="2L4-YX-7Ny"/>
                             </mask>
                         </variation>
                     </view>
@@ -733,7 +733,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4t-OL-HFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="553"/>
+            <point key="canvasLocation" x="2346" y="391"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="pVE-O4-285">

@@ -13,7 +13,7 @@
 #import "MyLoginViewController.h"
 #import "MySignUpViewController.h"
 
-@interface SearchViewController : UIViewController<PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate,UITableViewDelegate, UITableViewDataSource>
+@interface SearchViewController : UIViewController<PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate,UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *jobtitleTextField;

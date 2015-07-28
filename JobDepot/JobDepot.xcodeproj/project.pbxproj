@@ -38,8 +38,6 @@
 		90BC77531B65A281003B7089 /* MySignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90BC77511B65A281003B7089 /* MySignUpViewController.xib */; };
 		90BC77551B65A685003B7089 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 90BC77541B65A685003B7089 /* logo.png */; };
 		90F08B091B62F21C0012B53F /* EditResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F08B081B62F21C0012B53F /* EditResumeViewController.m */; };
-		90F08B141B62F7820012B53F /* CareerBuilder.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */; };
-		90F08B151B62F78B0012B53F /* libCareerBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F08B111B62F7750012B53F /* libCareerBuilder.a */; };
 		F65F98D51B458E4E007FBEC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98D41B458E4E007FBEC6 /* main.m */; };
 		F65F98D81B458E4E007FBEC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98D71B458E4E007FBEC6 /* AppDelegate.m */; };
 		F65F98DB1B458E4E007FBEC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98DA1B458E4E007FBEC6 /* ViewController.m */; };
@@ -67,36 +65,37 @@
 		F65F991D1B459086007FBEC6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F990F1B459086007FBEC6 /* Social.framework */; };
 		F65F991E1B459086007FBEC6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F99101B459086007FBEC6 /* StoreKit.framework */; };
 		F65F991F1B459086007FBEC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F99111B459086007FBEC6 /* SystemConfiguration.framework */; };
+		F68A3AE41B6841E1008209DC /* libCareerBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A3AE11B6841D8008209DC /* libCareerBuilder.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		90F08B101B62F7750012B53F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8523BA2816E4E18C0085A6CA;
-			remoteInfo = CareerBuilder;
-		};
-		90F08B121B62F7750012B53F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8523BA3916E4E18C0085A6CA;
-			remoteInfo = CareerBuilderTests;
-		};
-		90F08B161B62F7940012B53F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8523BA2716E4E18C0085A6CA;
-			remoteInfo = CareerBuilder;
-		};
 		F65F98E91B458E4E007FBEC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F65F98C71B458E4E007FBEC6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F65F98CE1B458E4E007FBEC6;
 			remoteInfo = JobDepot;
+		};
+		F68A3AE01B6841D8008209DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8523BA2816E4E18C0085A6CA;
+			remoteInfo = CareerBuilder;
+		};
+		F68A3AE21B6841D8008209DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8523BA3916E4E18C0085A6CA;
+			remoteInfo = CareerBuilderTests;
+		};
+		F68A3AE51B6841EB008209DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8523BA2716E4E18C0085A6CA;
+			remoteInfo = CareerBuilder;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -154,7 +153,6 @@
 		90BC77541B65A685003B7089 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		90F08B071B62F21C0012B53F /* EditResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditResumeViewController.h; sourceTree = "<group>"; };
 		90F08B081B62F21C0012B53F /* EditResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditResumeViewController.m; sourceTree = "<group>"; };
-		90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareerBuilder.xcodeproj; path = "../../../../../../../../../Desktop/CareerBuilder-API-IOS-master/CareerBuilder.xcodeproj"; sourceTree = "<group>"; };
 		F65F98CF1B458E4E007FBEC6 /* JobDepot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobDepot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65F98D31B458E4E007FBEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65F98D41B458E4E007FBEC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -188,6 +186,7 @@
 		F65F990F1B459086007FBEC6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F65F99101B459086007FBEC6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F65F99111B459086007FBEC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareerBuilder.xcodeproj; path = "../../../../Downloads/CareerBuilder-API-IOS-master/CareerBuilder.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F08B151B62F78B0012B53F /* libCareerBuilder.a in Frameworks */,
-				90F08B141B62F7820012B53F /* CareerBuilder.xcodeproj in Frameworks */,
+				F68A3AE41B6841E1008209DC /* libCareerBuilder.a in Frameworks */,
 				F65F99121B459086007FBEC6 /* Accounts.framework in Frameworks */,
 				F65F99131B459086007FBEC6 /* AudioToolbox.framework in Frameworks */,
 				F65F99141B459086007FBEC6 /* AVFoundation.framework in Frameworks */,
@@ -344,19 +342,10 @@
 			name = "Sign In & Up";
 			sourceTree = "<group>";
 		};
-		90F08B0C1B62F7740012B53F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				90F08B111B62F7750012B53F /* libCareerBuilder.a */,
-				90F08B131B62F7750012B53F /* CareerBuilderTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F65F98C61B458E4E007FBEC6 = {
 			isa = PBXGroup;
 			children = (
-				90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */,
+				F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */,
 				908AD5EA1B6187C0002A3389 /* LinkedInIOSHelper */,
 				F65F98D11B458E4E007FBEC6 /* JobDepot */,
 				F65F98EB1B458E4E007FBEC6 /* JobDepotTests */,
@@ -444,6 +433,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F68A3ADC1B6841D8008209DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F68A3AE11B6841D8008209DC /* libCareerBuilder.a */,
+				F68A3AE31B6841D8008209DC /* CareerBuilderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -458,7 +456,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				90F08B171B62F7940012B53F /* PBXTargetDependency */,
+				F68A3AE61B6841EB008209DC /* PBXTargetDependency */,
 			);
 			name = JobDepot;
 			productName = JobDepot;
@@ -514,8 +512,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 90F08B0C1B62F7740012B53F /* Products */;
-					ProjectRef = 90F08B0B1B62F7740012B53F /* CareerBuilder.xcodeproj */;
+					ProductGroup = F68A3ADC1B6841D8008209DC /* Products */;
+					ProjectRef = F68A3ADB1B6841D8008209DC /* CareerBuilder.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -527,18 +525,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		90F08B111B62F7750012B53F /* libCareerBuilder.a */ = {
+		F68A3AE11B6841D8008209DC /* libCareerBuilder.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCareerBuilder.a;
-			remoteRef = 90F08B101B62F7750012B53F /* PBXContainerItemProxy */;
+			remoteRef = F68A3AE01B6841D8008209DC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		90F08B131B62F7750012B53F /* CareerBuilderTests.octest */ = {
+		F68A3AE31B6841D8008209DC /* CareerBuilderTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CareerBuilderTests.octest;
-			remoteRef = 90F08B121B62F7750012B53F /* PBXContainerItemProxy */;
+			remoteRef = F68A3AE21B6841D8008209DC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -616,15 +614,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		90F08B171B62F7940012B53F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CareerBuilder;
-			targetProxy = 90F08B161B62F7940012B53F /* PBXContainerItemProxy */;
-		};
 		F65F98EA1B458E4E007FBEC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F65F98CE1B458E4E007FBEC6 /* JobDepot */;
 			targetProxy = F65F98E91B458E4E007FBEC6 /* PBXContainerItemProxy */;
+		};
+		F68A3AE61B6841EB008209DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareerBuilder;
+			targetProxy = F68A3AE51B6841EB008209DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

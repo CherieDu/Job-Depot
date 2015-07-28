@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zhS-er-toS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -281,6 +282,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qco-mS-vCb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KKi-v4-ltg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AOm-ou-P6h">
@@ -292,7 +294,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tt-YS-rLU">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="284" width="368" height="21"/>
@@ -301,7 +303,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm an employer." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLS-Ga-YOO">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="450" width="368" height="21"/>
@@ -310,7 +312,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQM-bt-NuW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="363" width="368" height="21"/>
@@ -351,16 +353,17 @@
                         <viewControllerLayoutGuide type="bottom" id="dWc-ld-cAt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1od-IH-DRs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Wjn-KA-PZb"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Wjn-KA-PZb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLL-en-mHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2319" y="2173"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Jobs-->
         <scene sceneID="G7t-E7-g1T">
             <objects>
                 <viewController id="Bva-Us-Gcg" sceneMemberID="viewController">
@@ -369,10 +372,11 @@
                         <viewControllerLayoutGuide type="bottom" id="4Wj-Xd-N1H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XIX-x8-gDU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Uwi-jv-Av3"/>
+                    <tabBarItem key="tabBarItem" title="Post Jobs" image="Add Rule-25.png" id="Uwi-jv-Av3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-wC-cPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,32 +416,23 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="136" y="87" width="128" height="128"/>
-                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKu-Cz-rss">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="76" y="333" width="248" height="21"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piJ-5u-Qfu">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="76" y="289" width="248" height="21"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a candidate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1re-gZ-y9x">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="76" y="381" width="248" height="21"/>
@@ -465,16 +460,16 @@
                                 <exclude reference="1re-gZ-y9x"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="UWN-0w-6An"/>
+                                <exclude reference="pYm-UW-rB6"/>
+                                <exclude reference="FiI-QE-sxw"/>
+                                <exclude reference="HNx-xw-gew"/>
+                                <exclude reference="I2T-3X-AgA"/>
+                                <exclude reference="hLp-oo-h7Q"/>
                                 <exclude reference="1MR-Uj-XBk"/>
                                 <exclude reference="7gE-0a-hd0"/>
                                 <exclude reference="Ez4-Mu-4vx"/>
                                 <exclude reference="P5q-mz-jsl"/>
-                                <exclude reference="FiI-QE-sxw"/>
-                                <exclude reference="HNx-xw-gew"/>
-                                <exclude reference="I2T-3X-AgA"/>
-                                <exclude reference="UWN-0w-6An"/>
-                                <exclude reference="pYm-UW-rB6"/>
-                                <exclude reference="hLp-oo-h7Q"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -485,16 +480,16 @@
                                 <include reference="1re-gZ-y9x"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="UWN-0w-6An"/>
+                                <include reference="pYm-UW-rB6"/>
+                                <include reference="FiI-QE-sxw"/>
+                                <include reference="HNx-xw-gew"/>
+                                <include reference="I2T-3X-AgA"/>
+                                <include reference="hLp-oo-h7Q"/>
                                 <include reference="1MR-Uj-XBk"/>
                                 <include reference="7gE-0a-hd0"/>
                                 <include reference="Ez4-Mu-4vx"/>
                                 <include reference="P5q-mz-jsl"/>
-                                <include reference="FiI-QE-sxw"/>
-                                <include reference="HNx-xw-gew"/>
-                                <include reference="I2T-3X-AgA"/>
-                                <include reference="UWN-0w-6An"/>
-                                <include reference="pYm-UW-rB6"/>
-                                <include reference="hLp-oo-h7Q"/>
                             </mask>
                         </variation>
                     </view>
@@ -642,6 +637,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JuT-i1-CEt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KvV-4Q-obC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N7c-yR-X9k">
@@ -694,6 +690,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gqu-5f-Yf1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qku-wv-v6c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnu-MM-odA">
@@ -801,6 +798,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add Rule-25.png" width="25" height="25"/>
         <image name="Gender Neutral User-25.png" width="25" height="25"/>
         <image name="Resume-25.png" width="25" height="25"/>
         <image name="head image.jpg" width="300" height="300"/>

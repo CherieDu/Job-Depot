@@ -26,6 +26,8 @@
 		908AD60E1B618850002A3389 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908AD60D1B618850002A3389 /* HistoryViewController.m */; };
 		908AD6101B62C6C5002A3389 /* head image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 908AD60F1B62C6C5002A3389 /* head image.jpg */; };
 		908AD6131B62DE92002A3389 /* MoreInfoWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */; };
+		909B81811B67FE8A00CEEF79 /* Strike Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 909B81801B67FE8A00CEEF79 /* Strike Filled-25.png */; };
+		909B81831B67FEFD00CEEF79 /* Add Rule-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 909B81821B67FEFD00CEEF79 /* Add Rule-25.png */; };
 		90BC77361B65747B003B7089 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77351B65747B003B7089 /* AccountViewController.m */; };
 		90BC773C1B65996C003B7089 /* searchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC773A1B65996C003B7089 /* searchTableViewController.m */; };
 		90BC77461B65A06A003B7089 /* CandidateLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC77451B65A06A003B7089 /* CandidateLoginViewController.m */; };
@@ -133,6 +135,8 @@
 		908AD60F1B62C6C5002A3389 /* head image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "head image.jpg"; sourceTree = "<group>"; };
 		908AD6111B62DE92002A3389 /* MoreInfoWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoWebViewController.h; sourceTree = "<group>"; };
 		908AD6121B62DE92002A3389 /* MoreInfoWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoWebViewController.m; sourceTree = "<group>"; };
+		909B81801B67FE8A00CEEF79 /* Strike Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Strike Filled-25.png"; sourceTree = "<group>"; };
+		909B81821B67FEFD00CEEF79 /* Add Rule-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add Rule-25.png"; sourceTree = "<group>"; };
 		90BC77341B65747B003B7089 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		90BC77351B65747B003B7089 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		90BC773A1B65996C003B7089 /* searchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchTableViewController.m; sourceTree = "<group>"; };
@@ -291,7 +295,7 @@
 			name = LinkedInHelper;
 			sourceTree = "<group>";
 		};
-		90BC773D1B659E62003B7089 /* Sign In & Up */ = {
+		909B817D1B67FCEE00CEEF79 /* Candidate */ = {
 			isa = PBXGroup;
 			children = (
 				90BC77441B65A06A003B7089 /* CandidateLoginViewController.h */,
@@ -304,6 +308,22 @@
 				90BC774F1B65A281003B7089 /* MySignUpViewController.h */,
 				90BC77501B65A281003B7089 /* MySignUpViewController.m */,
 				90BC77511B65A281003B7089 /* MySignUpViewController.xib */,
+			);
+			name = Candidate;
+			sourceTree = "<group>";
+		};
+		909B817F1B67FD5D00CEEF79 /* Employer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Employer;
+			sourceTree = "<group>";
+		};
+		90BC773D1B659E62003B7089 /* Sign In & Up */ = {
+			isa = PBXGroup;
+			children = (
+				909B817F1B67FD5D00CEEF79 /* Employer */,
+				909B817D1B67FCEE00CEEF79 /* Candidate */,
 			);
 			name = "Sign In & Up";
 			sourceTree = "<group>";
@@ -378,6 +398,8 @@
 			isa = PBXGroup;
 			children = (
 				907440341B65734B00461154 /* Gender Neutral User-25.png */,
+				909B81821B67FEFD00CEEF79 /* Add Rule-25.png */,
+				909B81801B67FE8A00CEEF79 /* Strike Filled-25.png */,
 				9074402D1B65704100461154 /* resume.png */,
 				90BC77541B65A685003B7089 /* logo.png */,
 				907440321B6572A000461154 /* Resume-25.png */,
@@ -511,9 +533,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				907440301B65704100461154 /* resumeicon.png in Resources */,
+				909B81811B67FE8A00CEEF79 /* Strike Filled-25.png in Resources */,
 				9074402F1B65704100461154 /* resume.png in Resources */,
 				90BC77531B65A281003B7089 /* MySignUpViewController.xib in Resources */,
 				90BC774E1B65A267003B7089 /* MyLoginViewController.xib in Resources */,
+				909B81831B67FEFD00CEEF79 /* Add Rule-25.png in Resources */,
 				F65F98DE1B458E4E007FBEC6 /* Main.storyboard in Resources */,
 				F65F98E31B458E4E007FBEC6 /* LaunchScreen.xib in Resources */,
 				90BC77551B65A685003B7089 /* logo.png in Resources */,

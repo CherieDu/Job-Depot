@@ -1,18 +1,18 @@
 //
-//  JobHistoryTableViewController.m
+//  HistoryPostedJobsTableViewController.m
 //  JobDepot
 //
-//  Created by Chunyue Du on 7/28/15.
+//  Created by Chunyue Du on 7/31/15.
 //  Copyright (c) 2015 team4. All rights reserved.
 //
 
-#import "JobHistoryTableViewController.h"
+#import "HistoryPostedJobsTableViewController.h"
 
-@interface JobHistoryTableViewController ()
+@interface HistoryPostedJobsTableViewController ()
 
 @end
 
-@implementation JobHistoryTableViewController
+@implementation HistoryPostedJobsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -87,15 +87,14 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-//     Get the new view controller using [segue destinationViewController].
-//     Pass the selected object to the new view controller.
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
-
+*/
 
 @end

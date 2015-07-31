@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmz-vq-cxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="1405"/>
+            <point key="canvasLocation" x="112" y="1540"/>
         </scene>
         <!--Post jobs history-->
         <scene sceneID="dnf-ig-bH2">
@@ -873,7 +873,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un7-Y3-jSi">
-                                <rect key="frame" x="125" y="232" width="71" height="30"/>
+                                <rect key="frame" x="16" y="271" width="288" height="30"/>
                                 <state key="normal" title="Candidate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -881,20 +881,14 @@
                                     <segue destination="y5f-Uv-eb0" kind="modal" id="e4D-PD-hEC"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I am a recruiter, who are looking for suitable candidate. Click &quot;Employer&quot;." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hgS-go-GDl">
-                                <rect key="frame" x="16" y="290" width="288" height="51"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="I am a recruiter, who are looking for suitable candidate. Click &quot;Employer&quot;." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hgS-go-GDl">
+                                <rect key="frame" x="16" y="347" width="288" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I am a candidate, who are looking for jobs. Click &quot;Candidate&quot;." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MoQ-TW-yvo">
-                                <rect key="frame" x="16" y="155" width="288" height="61"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnu-MM-odA">
-                                <rect key="frame" x="128" y="367" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnu-MM-odA">
+                                <rect key="frame" x="16" y="406" width="288" height="30"/>
                                 <state key="normal" title="Employer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -902,18 +896,26 @@
                                     <segue destination="E69-vL-LM7" kind="modal" id="VtR-Wl-Fvs"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="I am a candidate who are looking for jobs. Click &quot;Candidate&quot;.     " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-ah-nqL">
+                                <rect key="frame" x="16" y="203" width="288" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fve-gb-MAc">
+                                <rect key="frame" x="39" y="65" width="243" height="71"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MoQ-TW-yvo" firstAttribute="top" secondItem="QLc-Ev-WiK" secondAttribute="bottom" constant="135" id="2NP-Vs-XmR"/>
-                            <constraint firstAttribute="centerX" secondItem="MoQ-TW-yvo" secondAttribute="centerX" id="Ml3-08-eYV"/>
-                            <constraint firstItem="gqu-5f-Yf1" firstAttribute="top" secondItem="Qnu-MM-odA" secondAttribute="bottom" constant="171" id="OuH-pR-w4V"/>
-                            <constraint firstAttribute="centerX" secondItem="Qnu-MM-odA" secondAttribute="centerX" id="Uh0-9s-6f8"/>
-                            <constraint firstItem="Qnu-MM-odA" firstAttribute="top" secondItem="hgS-go-GDl" secondAttribute="bottom" constant="26" id="WMy-hm-S38"/>
-                            <constraint firstItem="un7-Y3-jSi" firstAttribute="top" secondItem="MoQ-TW-yvo" secondAttribute="bottom" constant="16" id="fZD-xC-6yn"/>
-                            <constraint firstAttribute="centerX" secondItem="un7-Y3-jSi" secondAttribute="centerX" id="sYl-f6-avw"/>
-                            <constraint firstItem="hgS-go-GDl" firstAttribute="top" secondItem="un7-Y3-jSi" secondAttribute="bottom" constant="28" id="vRo-iE-WbC"/>
-                            <constraint firstAttribute="centerX" secondItem="hgS-go-GDl" secondAttribute="centerX" id="wjI-v6-4ur"/>
+                            <constraint firstAttribute="centerX" secondItem="qdd-ah-nqL" secondAttribute="centerX" id="2Zv-8J-l7D"/>
+                            <constraint firstItem="Qnu-MM-odA" firstAttribute="width" secondItem="hgS-go-GDl" secondAttribute="width" id="9rY-ux-wdE"/>
+                            <constraint firstItem="un7-Y3-jSi" firstAttribute="width" secondItem="hgS-go-GDl" secondAttribute="width" id="Fu5-Ow-7DV"/>
+                            <constraint firstAttribute="centerX" secondItem="hgS-go-GDl" secondAttribute="centerX" id="UOs-F8-rmB"/>
+                            <constraint firstItem="qdd-ah-nqL" firstAttribute="width" secondItem="un7-Y3-jSi" secondAttribute="width" id="g9v-zp-JRU"/>
+                            <constraint firstAttribute="centerX" secondItem="Qnu-MM-odA" secondAttribute="centerX" id="h4X-HK-jrp"/>
+                            <constraint firstAttribute="centerX" secondItem="un7-Y3-jSi" secondAttribute="centerX" id="lF0-u6-hFT"/>
+                            <constraint firstAttribute="centerX" secondItem="Fve-gb-MAc" secondAttribute="centerX" id="lId-y8-wlH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1073,6 +1075,7 @@
         <image name="Gender Neutral User-25.png" width="25" height="25"/>
         <image name="Resume-25.png" width="25" height="25"/>
         <image name="head image.jpg" width="300" height="300"/>
+        <image name="logo.png" width="540" height="116"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1081,7 +1084,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ysC-ba-CE2"/>
-        <segue reference="1Fh-sg-12O"/>
+        <segue reference="3BP-Qx-XZj"/>
         <segue reference="h27-Ae-9NX"/>
     </inferredMetricsTieBreakers>
 </document>

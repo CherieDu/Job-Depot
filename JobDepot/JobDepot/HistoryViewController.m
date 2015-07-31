@@ -54,7 +54,7 @@
         
         linkedIn.showActivityIndicator = YES;
         
-#warning - Your LinkedIn App ClientId - ClientSecret - RedirectUrl
+//#warning - Your LinkedIn App ClientId - ClientSecret - RedirectUrl
         
         [linkedIn requestMeWithSenderViewController:self
                                            clientId:@"77h7iqh4jv6swd"

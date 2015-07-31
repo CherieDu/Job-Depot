@@ -610,13 +610,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="120" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="120" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="120" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="120" image="head image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-YX-7Ny">
                                 <rect key="frame" x="100" y="69" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2L4-YX-7Ny" secondAttribute="height" multiplier="1:1" id="ri0-JF-pSa"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s4-kn-b97">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s4-kn-b97">
                                 <rect key="frame" x="16" y="417" width="288" height="30"/>
                                 <color key="backgroundColor" red="0.82689466150000002" green="1" blue="0.77923901129999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign Out">
@@ -627,8 +627,8 @@
                                     <segue destination="zhS-er-toS" kind="modal" id="1Fh-sg-12O"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-Xa-Wdx">
-                                <rect key="frame" x="16" y="232" width="288" height="131"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="288" placeholderIntrinsicHeight="131" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-Xa-Wdx">
+                                <rect key="frame" x="16" y="247" width="288" height="131"/>
                                 <connections>
                                     <segue destination="Wro-n2-eZd" kind="embed" id="r1W-U4-LZ0"/>
                                 </connections>
@@ -636,11 +636,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2L4-YX-7Ny" firstAttribute="top" secondItem="lb5-uf-an9" secondAttribute="bottom" constant="49" id="7Gf-Kc-ydP"/>
-                            <constraint firstItem="yyw-Xa-Wdx" firstAttribute="top" secondItem="2L4-YX-7Ny" secondAttribute="bottom" constant="43" id="WLD-Zs-dM4"/>
-                            <constraint firstItem="7s4-kn-b97" firstAttribute="top" secondItem="yyw-Xa-Wdx" secondAttribute="bottom" constant="54" id="mCx-HC-T4M"/>
+                            <constraint firstItem="2L4-YX-7Ny" firstAttribute="leading" secondItem="VVt-S9-xGD" secondAttribute="leadingMargin" constant="84" id="34R-NL-dp6"/>
+                            <constraint firstItem="yyw-Xa-Wdx" firstAttribute="leading" secondItem="7s4-kn-b97" secondAttribute="leading" id="4uH-iG-cah"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2L4-YX-7Ny" secondAttribute="trailing" constant="84" id="6r1-0T-gBA"/>
+                            <constraint firstItem="7s4-kn-b97" firstAttribute="leading" secondItem="VVt-S9-xGD" secondAttribute="leadingMargin" id="9CV-VP-ic5"/>
+                            <constraint firstAttribute="centerX" secondItem="2L4-YX-7Ny" secondAttribute="centerX" id="GS7-oP-fpu"/>
+                            <constraint firstItem="7s4-kn-b97" firstAttribute="width" secondItem="yyw-Xa-Wdx" secondAttribute="width" id="XvO-jc-5VX"/>
                             <constraint firstAttribute="centerX" secondItem="2L4-YX-7Ny" secondAttribute="centerX" id="n83-RB-kEg"/>
-                            <constraint firstItem="mRB-Yj-gyI" firstAttribute="top" secondItem="7s4-kn-b97" secondAttribute="bottom" constant="72" id="oY0-Zy-Nxq"/>
                             <constraint firstAttribute="centerX" secondItem="yyw-Xa-Wdx" secondAttribute="centerX" id="qnb-9z-uCk"/>
                             <constraint firstAttribute="centerX" secondItem="7s4-kn-b97" secondAttribute="centerX" id="uuU-Re-ZcS"/>
                         </constraints>
@@ -1078,8 +1080,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="1Fh-sg-12O"/>
-        <segue reference="YYZ-gT-Td8"/>
         <segue reference="ysC-ba-CE2"/>
+        <segue reference="1Fh-sg-12O"/>
+        <segue reference="h27-Ae-9NX"/>
     </inferredMetricsTieBreakers>
 </document>

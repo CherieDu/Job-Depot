@@ -29,7 +29,6 @@
 		909B81811B67FE8A00CEEF79 /* Strike Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 909B81801B67FE8A00CEEF79 /* Strike Filled-25.png */; };
 		909B81831B67FEFD00CEEF79 /* Add Rule-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 909B81821B67FEFD00CEEF79 /* Add Rule-25.png */; };
 		909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B81871B68070D00CEEF79 /* PostJobViewController.m */; };
-		909B818B1B682EA300CEEF79 /* JobHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B818A1B682EA300CEEF79 /* JobHistoryTableViewController.m */; };
 		909B81A11B6846CE00CEEF79 /* CBCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B81941B6846CE00CEEF79 /* CBCompany.m */; };
 		909B81A21B6846CE00CEEF79 /* CBGlobalCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B81961B6846CE00CEEF79 /* CBGlobalCredentials.m */; };
 		909B81A31B6846CE00CEEF79 /* CBJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 909B81981B6846CE00CEEF79 /* CBJob.m */; };
@@ -56,6 +55,7 @@
 		90F08B091B62F21C0012B53F /* EditResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F08B081B62F21C0012B53F /* EditResumeViewController.m */; };
 		90F9010E1B6C14C300C01CA4 /* HistoryPostedJobsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F9010D1B6C14C300C01CA4 /* HistoryPostedJobsTableViewController.m */; };
 		90F901111B6C16DE00C01CA4 /* FetchPostedJobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F901101B6C16DE00C01CA4 /* FetchPostedJobsViewController.m */; };
+		90F901141B6C4EA800C01CA4 /* JobInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F901131B6C4EA800C01CA4 /* JobInfoViewController.m */; };
 		F65F98D51B458E4E007FBEC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98D41B458E4E007FBEC6 /* main.m */; };
 		F65F98D81B458E4E007FBEC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98D71B458E4E007FBEC6 /* AppDelegate.m */; };
 		F65F98DB1B458E4E007FBEC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F98DA1B458E4E007FBEC6 /* ViewController.m */; };
@@ -135,8 +135,6 @@
 		909B81821B67FEFD00CEEF79 /* Add Rule-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add Rule-25.png"; sourceTree = "<group>"; };
 		909B81861B68070D00CEEF79 /* PostJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostJobViewController.h; sourceTree = "<group>"; };
 		909B81871B68070D00CEEF79 /* PostJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostJobViewController.m; sourceTree = "<group>"; };
-		909B81891B682EA300CEEF79 /* JobHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobHistoryTableViewController.h; sourceTree = "<group>"; };
-		909B818A1B682EA300CEEF79 /* JobHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobHistoryTableViewController.m; sourceTree = "<group>"; };
 		909B81901B6846B400CEEF79 /* CareerBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CareerBuilder-Prefix.pch"; sourceTree = "<group>"; };
 		909B81911B6846B400CEEF79 /* CBJobSeekerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBJobSeekerFramework.h; sourceTree = "<group>"; };
 		909B81931B6846CE00CEEF79 /* CBCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCompany.h; sourceTree = "<group>"; };
@@ -188,6 +186,8 @@
 		90F9010D1B6C14C300C01CA4 /* HistoryPostedJobsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryPostedJobsTableViewController.m; sourceTree = "<group>"; };
 		90F9010F1B6C16DE00C01CA4 /* FetchPostedJobsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchPostedJobsViewController.h; sourceTree = "<group>"; };
 		90F901101B6C16DE00C01CA4 /* FetchPostedJobsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchPostedJobsViewController.m; sourceTree = "<group>"; };
+		90F901121B6C4EA800C01CA4 /* JobInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobInfoViewController.h; sourceTree = "<group>"; };
+		90F901131B6C4EA800C01CA4 /* JobInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobInfoViewController.m; sourceTree = "<group>"; };
 		F65F98CF1B458E4E007FBEC6 /* JobDepot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobDepot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65F98D31B458E4E007FBEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65F98D41B458E4E007FBEC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -364,12 +364,12 @@
 			children = (
 				909B81861B68070D00CEEF79 /* PostJobViewController.h */,
 				909B81871B68070D00CEEF79 /* PostJobViewController.m */,
-				909B81891B682EA300CEEF79 /* JobHistoryTableViewController.h */,
-				909B818A1B682EA300CEEF79 /* JobHistoryTableViewController.m */,
 				90F9010C1B6C14C300C01CA4 /* HistoryPostedJobsTableViewController.h */,
 				90F9010D1B6C14C300C01CA4 /* HistoryPostedJobsTableViewController.m */,
 				90F9010F1B6C16DE00C01CA4 /* FetchPostedJobsViewController.h */,
 				90F901101B6C16DE00C01CA4 /* FetchPostedJobsViewController.m */,
+				90F901121B6C4EA800C01CA4 /* JobInfoViewController.h */,
+				90F901131B6C4EA800C01CA4 /* JobInfoViewController.m */,
 			);
 			name = Employer;
 			sourceTree = "<group>";
@@ -671,7 +671,6 @@
 				9027A4471B5EE23800CAFED4 /* ResumeViewController.m in Sources */,
 				909B81B51B6846FC00CEEF79 /* CBMoney.m in Sources */,
 				908AD60E1B618850002A3389 /* HistoryViewController.m in Sources */,
-				909B818B1B682EA300CEEF79 /* JobHistoryTableViewController.m in Sources */,
 				90BC77521B65A281003B7089 /* MySignUpViewController.m in Sources */,
 				909B81A61B6846CE00CEEF79 /* CBJobSearchResult.m in Sources */,
 				909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */,
@@ -697,6 +696,7 @@
 				909B81B61B6846FC00CEEF79 /* CBTestimonial.m in Sources */,
 				909B81A11B6846CE00CEEF79 /* CBCompany.m in Sources */,
 				909B81A31B6846CE00CEEF79 /* CBJob.m in Sources */,
+				90F901141B6C4EA800C01CA4 /* JobInfoViewController.m in Sources */,
 				F65F98D51B458E4E007FBEC6 /* main.m in Sources */,
 				90F08B091B62F21C0012B53F /* EditResumeViewController.m in Sources */,
 				909B81A51B6846CE00CEEF79 /* CBJobSearch.m in Sources */,

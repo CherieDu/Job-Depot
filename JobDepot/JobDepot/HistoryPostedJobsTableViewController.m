@@ -7,6 +7,9 @@
 //
 
 #import "HistoryPostedJobsTableViewController.h"
+#import "JobInfoViewController.h"
+//#import "FetchPostedJobsViewController.h"
+
 
 @interface HistoryPostedJobsTableViewController ()
 
@@ -30,10 +33,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//- (void)didReceiveMemoryWarning {
+//    [super didReceiveMemoryWarning];
+//    // Dispose of any resources that can be recreated.
+//}
 
 #pragma mark - Table view data source
 
@@ -51,6 +54,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Posted Job Cell" forIndexPath:indexPath];
+    
     NSDictionary *job = self.postedJobs[indexPath.row];
     cell.textLabel.text = [job valueForKey:@"title"];
     cell.detailTextLabel.text = [job valueForKey:@"company"];
@@ -94,14 +98,54 @@
 }
 */
 
-/*
+- (void)prepareJobInfoViewController:(JobInfoViewController *)jobInfoVC toDisplayInfo:(NSDictionary *)job
+{
+    NSLog(@"prepareJobInfoViewController %@", job);
+    jobInfoVC.title = [job valueForKey:@"title"];
+    jobInfoVC.jobTitle.text = [job valueForKey:@"title"];
+    jobInfoVC.company.text = [job valueForKey:@"company"];
+    jobInfoVC.jobDescription.text = [job valueForKey:@"description"];
+    jobInfoVC.jobAddress.text = [job valueForKey:@"address"];
+    jobInfoVC.jobCity.text = [job valueForKey:@"city"];
+    jobInfoVC.jobCountry.text = [job valueForKey:@"country"];
+
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSLog(@"prepareForSegue");
+
+    if ([sender isKindOfClass:[UITableViewCell class]]){
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        if (indexPath) {
+            if ([segue.identifier isEqualToString:@"Display Job"]) {
+                NSLog(@"Segue:Display Job");
+                
+                if ([segue.destinationViewController isKindOfClass:[JobInfoViewController class]]) {
+                    
+                    [self prepareJobInfoViewController:segue.destinationViewController toDisplayInfo:self.postedJobs[indexPath.row]];
+
+                    
+                    
+//                    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+                    
+                    
+//                    NSDictionary *jobs = [[self fetchJobs]]
+//                    NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+//                    [[segue destinationViewController] setDetailItem:object];
+                    
+                    
+                }
+            }
+        }
+    }
+
 }
-*/
+
 
 @end

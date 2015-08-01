@@ -1,33 +1,22 @@
 //
-//  FetchPostedJobsViewController.m
+//  JobInfoViewController.m
 //  JobDepot
 //
 //  Created by Chunyue Du on 7/31/15.
 //  Copyright (c) 2015 team4. All rights reserved.
 //
 
-#import "FetchPostedJobsViewController.h"
+#import "JobInfoViewController.h"
 
-@interface FetchPostedJobsViewController ()
+@interface JobInfoViewController ()
 
 @end
 
-@implementation FetchPostedJobsViewController
-
+@implementation JobInfoViewController
+@synthesize jobTitle, jobDescription, company, jobAddress, jobCountry, jobCity;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self fetchJobs];
     // Do any additional setup after loading the view.
-}
-
-- (void) fetchJobs{
-    PFUser *user = [PFUser currentUser];
-    PFQuery *query = [PFQuery queryWithClassName:@"PostedJob"];
-    [query whereKey:@"employerName" equalTo:user.username];
-    self.postedJobs = [query findObjects];
-    
-    NSLog(@"out side of query %@", self.postedJobs);
-//    self.postedJobs = nil;
 }
 
 - (void)didReceiveMemoryWarning {

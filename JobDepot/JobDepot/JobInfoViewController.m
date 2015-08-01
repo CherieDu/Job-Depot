@@ -14,7 +14,7 @@
 @end
 
 @implementation JobInfoViewController
-@synthesize jobTitle, jobDescription, company, jobAddress, jobCountry, jobCity;
+@synthesize jobTitle, jobDescription, company, jobAddress;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureView];
@@ -57,8 +57,6 @@
         self.company.text = [self.detailItem valueForKey:@"company"];
         self.jobDescription.text = self.detailItem[@"description"];
         self.jobAddress.text = [self.detailItem valueForKey:@"address"];
-        self.jobCity.text = [self.detailItem valueForKey:@"city"];
-        self.jobCountry.text = [self.detailItem valueForKey:@"country"];
         
     }
     

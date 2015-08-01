@@ -15,8 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *jobTitle;
 @property (weak, nonatomic) IBOutlet UITextField *company;
 @property (weak, nonatomic) IBOutlet UITextView *jobDescription;
-@property (weak, nonatomic) IBOutlet UITextField *city;
-@property (weak, nonatomic) IBOutlet UITextField *country;
+
 @property (weak, nonatomic) IBOutlet UITextField *address;
 
 

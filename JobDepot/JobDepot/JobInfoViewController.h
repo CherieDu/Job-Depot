@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *company;
 @property (weak, nonatomic) IBOutlet UITextView *jobDescription;
 @property (weak, nonatomic) IBOutlet UILabel *jobAddress;
-@property (weak, nonatomic) IBOutlet UILabel *jobCity;
-@property (weak, nonatomic) IBOutlet UILabel *jobCountry;
+
 
 @end

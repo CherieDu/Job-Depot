@@ -115,9 +115,7 @@
     jobInfoVC.company.text = [job valueForKey:@"company"];
     jobInfoVC.jobDescription.text = [job valueForKey:@"description"];
     jobInfoVC.jobAddress.text = [job valueForKey:@"address"];
-    jobInfoVC.jobCity.text = [job valueForKey:@"city"];
-    jobInfoVC.jobCountry.text = [job valueForKey:@"country"];
-
+    
 }
 
 

@@ -17,5 +17,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *jobDescription;
 @property (weak, nonatomic) IBOutlet UILabel *jobAddress;
 
+@property (weak, nonatomic) IBOutlet UILabel *jobType;
+
+@property (weak, nonatomic) IBOutlet UILabel *startDate;
 
 @end

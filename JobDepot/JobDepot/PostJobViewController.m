@@ -13,14 +13,29 @@
 @end
 
 @implementation PostJobViewController
-@synthesize jobTitle, company, jobDescription, address, jobType, numberOfPosition;
+@synthesize jobTitle, company, jobDescription, address, jobType, numberOfPosition, startDate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    datePicker = [[UIDatePicker alloc]init];
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    [self.startDate setInputView:datePicker];
+    
+    UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 44)];
+    [toolBar setTintColor:[UIColor grayColor]];
+    UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(ShowSelectedDate)];
+    UIBarButtonItem *space = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [toolBar setItems:[NSArray arrayWithObjects:space, doneBtn, nil]];
+    [self.startDate setInputAccessoryView:toolBar];
     // Do any additional setup after loading the view.
 }
 
-
+- (void)ShowSelectedDate{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"MMM/dd/YYYY"];
+    self.startDate.text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:datePicker.date]];
+    [self.startDate resignFirstResponder];
+}
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
@@ -246,7 +261,14 @@
     postedJob[@"company"] = company.text;
     postedJob[@"description"] = jobDescription.text;
     postedJob[@"address"] = address.text;
-    postedJob[@"type"] = jobType;
+    if (jobType.selectedSegmentIndex== 0) {
+        postedJob[@"type"] = @"Full time";
+    } else {
+        postedJob[@"type"] = @"Part time";
+    }
+    postedJob[@"numOfPosition"] = numberOfPosition.text;
+    postedJob[@"startDate"] = startDate.text;
+
     [self.view endEditing:YES];
     [postedJob saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {

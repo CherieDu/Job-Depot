@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
+#import <CoreData/CoreData.h>
 
 @interface HistoryPostedJobsTableViewController : UITableViewController
 @property (nonatomic, strong) NSArray * postedJobs;

@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface JobInfoViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *jobTitle;
+@property (strong, nonatomic) id detailItem;
 
-@property (strong, nonatomic) IBOutlet UILabel *company;
-@property (strong, nonatomic) IBOutlet UITextView *jobDescription;
-@property (strong, nonatomic) IBOutlet UILabel *jobAddress;
-@property (strong, nonatomic) IBOutlet UILabel *jobCity;
-@property (strong, nonatomic) IBOutlet UILabel *jobCountry;
+@property (weak, nonatomic) IBOutlet UILabel *jobTitle;
+
+@property (weak, nonatomic) IBOutlet UILabel *company;
+@property (weak, nonatomic) IBOutlet UITextView *jobDescription;
+@property (weak, nonatomic) IBOutlet UILabel *jobAddress;
+@property (weak, nonatomic) IBOutlet UILabel *jobCity;
+@property (weak, nonatomic) IBOutlet UILabel *jobCountry;
 
 @end

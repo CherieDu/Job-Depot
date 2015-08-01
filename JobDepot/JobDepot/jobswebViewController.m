@@ -26,15 +26,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    searchTableViewController *stc;
+//    searchTableViewController *stc;
     NSMutableArray *depotsURL;
     
     depotsURL = [[NSMutableArray alloc] initWithCapacity:40];
-    CBSearchObject *so = [[CBSearchObject alloc] init];
+//    CBSearchObject *so = [[CBSearchObject alloc] init];
     
     SearchViewController *svc;
     CBJob *tmpJob;
-    PFObject *resultjob = [PFObject objectWithClassName:@"ResultJobs"];
+//    PFObject *resultjob = [PFObject objectWithClassName:@"ResultJobs"];
     
     
     NSString *jobt = svc.jobtitleTextField.text;

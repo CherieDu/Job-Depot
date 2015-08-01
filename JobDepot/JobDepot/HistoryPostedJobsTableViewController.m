@@ -97,7 +97,12 @@
     return YES;
 }
 */
-
+- (NSDictionary *)fetchedResultsController: (JobInfoViewController *)jobInfoVC toDisplayInfo:(NSDictionary *)job
+{
+    NSLog(@"jobjobjob%@", job);
+    
+    return job;
+}
 - (void)prepareJobInfoViewController:(JobInfoViewController *)jobInfoVC toDisplayInfo:(NSDictionary *)job
 {
     NSLog(@"prepareJobInfoViewController %@", job);
@@ -128,9 +133,19 @@
                 
                 if ([segue.destinationViewController isKindOfClass:[JobInfoViewController class]]) {
                     
-                    [self prepareJobInfoViewController:segue.destinationViewController toDisplayInfo:self.postedJobs[indexPath.row]];
+//                    [self prepareJobInfoViewController:segue.destinationViewController toDisplayInfo:self.postedJobs[indexPath.row]];
 
                     
+//                    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+                    NSDictionary *object = [self fetchedResultsController: segue.destinationViewController toDisplayInfo:self.postedJobs[indexPath.row]];
+//
+//                    
+//                    
+////                    [[self fetchedResultsController] objectAtIndexPath:indexPath];
+                    [[segue destinationViewController] setDetailItem:object];
+//
+                    
+
                     
 //                    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
                     

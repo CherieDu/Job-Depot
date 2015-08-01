@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JobDepot/ResumeViewController.m"
-            timestampString = "459469557.738086"
+            timestampString = "460162037.105238"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
             landmarkName = "-SignupLinkedInBtn:"
             landmarkType = "5">
          </BreakpointContent>
@@ -79,6 +79,54 @@
             endingLineNumber = "10"
             landmarkName = "@interface JobInfoViewController"
             landmarkType = "2">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JobDepot/ViewController.h"
+            timestampString = "460159147.013027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "candidatebtn"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController candidatebtn]"
+                  moduleName = "JobDepot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChunyueDu/Dropbox/CMU/Courses/2015%20Summer/08723/project/Git/Job-Depot/JobDepot/JobDepot/ViewController.h"
+                  timestampString = "460159147.023659"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController setCandidatebtn:]"
+                  moduleName = "JobDepot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChunyueDu/Dropbox/CMU/Courses/2015%20Summer/08723/project/Git/Job-Depot/JobDepot/JobDepot/ViewController.h"
+                  timestampString = "460159147.023841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -19,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *country;
 @property (weak, nonatomic) IBOutlet UILabel *industry;
 @property (weak, nonatomic) IBOutlet UIImageView *avatar;
+@property (weak, nonatomic) IBOutlet UILabel *workTitle;
+@property (weak, nonatomic) IBOutlet UILabel *workCompany;
+@property (weak, nonatomic) IBOutlet UILabel *workExperience;
+
 //@property (weak, nonatomic) IBOutlet UIButton *moreInfoBtn;
 
 @end

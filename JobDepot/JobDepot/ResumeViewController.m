@@ -15,7 +15,7 @@
 @end
 
 @implementation ResumeViewController
-@synthesize email, name, headline, industry, city, country, avatar;
+@synthesize email, name, headline, industry, city, country, avatar, workCompany, workTitle, workExperience;
 
 - (void)viewDidLoad {
 
@@ -43,6 +43,7 @@
     LIUserInfo[@"formattedName"] = [userInfo objectForKey:@"formattedName"];
     LIUserInfo[@"id"] = [userInfo objectForKey:@"id"];
     LIUserInfo[@"industry"] = [userInfo objectForKey:@"industry"];
+    LIUserInfo[@"positions"] = [userInfo objectForKey:@"positions"];
     LIUserInfo[@"location"] = [userInfo objectForKey:@"location"];
     LIUserInfo[@"pictureUrls"] = [userInfo objectForKey:@"pictureUrls"];
     
@@ -62,83 +63,83 @@
     }];
 
 }
-
-- (void)uploadOrUpdateData:(NSDictionary*)userInfo{
-    PFUser *user = [PFUser currentUser];
-    PFQuery *query = [PFQuery queryWithClassName:@"LIUserInfo"];
-    [query whereKey:@"userName" equalTo:user.username];
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInfo, NSError *error) {
-        if (!userInfo) {
-            NSLog(@"The getFirstObject request failed. start create new profile");
-            PFObject *LIUserInfo = [PFObject objectWithClassName:@"LIUserInfo"];
-            LIUserInfo[@"userName"] = user.username;
-            LIUserInfo[@"firstName"] = [userInfo objectForKey:@"firstName"];
-            LIUserInfo[@"lastName"] = [userInfo objectForKey:@"lastName"];
-            LIUserInfo[@"emailAddress"] = [userInfo objectForKey:@"emailAddress"];
-            LIUserInfo[@"headline"] = [userInfo objectForKey:@"headline"];
-            LIUserInfo[@"formattedName"] = [userInfo objectForKey:@"formattedName"];
-            LIUserInfo[@"id"] = [userInfo objectForKey:@"id"];
-            LIUserInfo[@"industry"] = [userInfo objectForKey:@"industry"];
-            LIUserInfo[@"location"] = [userInfo objectForKey:@"location"];
-            LIUserInfo[@"pictureUrls"] = [userInfo objectForKey:@"pictureUrls"];
-            
-            //    LIUserInfo[@"city"] = [userInfo objectForKey:@"location" [objectForKey: @"name"]];
-            //    LIUserInfo[@"country"] = [userInfo objectForKey:@"location" [objectForKey]: @"country"];
-            LIUserInfo[@"publicProfileUrl"] = [userInfo objectForKey:@"publicProfileUrl"];
-            //    LIUserInfo[@"lastName"] = [userInfo objectForKey:@"lastName"];
-            NSLog(@"end create object");
-            [LIUserInfo saveInBackground];
-
-//            [LIUserInfo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//                if (succeeded) {
-//                    NSLog(@"save success %@", userInfo);
-//                    //            NSLog(@"emailAddress success %@",
-//                    //                  [userInfo objectForKey:@"emailAddress"]);
-//                    
-//                    // The object has been saved.
-//                } else {
-//                    NSLog(@"save data fail %@", userInfo);
-//                    // There was a problem, check error.description
-//                }
-//            }];
-
-            
-            
-        } else {
-            // The find succeeded.
-            
-            userInfo[@"userName"] = user.username;
-            userInfo[@"firstName"] = [userInfo objectForKey:@"firstName"];
-            userInfo[@"lastName"] = [userInfo objectForKey:@"lastName"];
-            userInfo[@"emailAddress"] = [userInfo objectForKey:@"emailAddress"];
-            userInfo[@"headline"] = [userInfo objectForKey:@"headline"];
-            userInfo[@"formattedName"] = [userInfo objectForKey:@"formattedName"];
-            userInfo[@"id"] = [userInfo objectForKey:@"id"];
-            userInfo[@"industry"] = [userInfo objectForKey:@"industry"];
-            userInfo[@"location"] = [userInfo objectForKey:@"location"];
-            userInfo[@"pictureUrls"] = [userInfo objectForKey:@"pictureUrls"];
-            
-            //    LIUserInfo[@"city"] = [userInfo objectForKey:@"location" [objectForKey: @"name"]];
-            //    LIUserInfo[@"country"] = [userInfo objectForKey:@"location" [objectForKey]: @"country"];
-            userInfo[@"publicProfileUrl"] = [userInfo objectForKey:@"publicProfileUrl"];
-            [userInfo saveInBackground];
-
-            
-//            email.text = userInfo[@"emailAddress"];
-//            name.text = userInfo[@"formattedName"];
-//            headline.text = userInfo[@"headline"];
-//            industry.text = userInfo[@"industry"];
+//
+//- (void)uploadOrUpdateData:(NSDictionary*)userInfo{
+//    PFUser *user = [PFUser currentUser];
+//    PFQuery *query = [PFQuery queryWithClassName:@"LIUserInfo"];
+//    [query whereKey:@"userName" equalTo:user.username];
+//    [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInfo, NSError *error) {
+//        if (!userInfo) {
+//            NSLog(@"The getFirstObject request failed. start create new profile");
+//            PFObject *LIUserInfo = [PFObject objectWithClassName:@"LIUserInfo"];
+//            LIUserInfo[@"userName"] = user.username;
+//            LIUserInfo[@"firstName"] = [userInfo objectForKey:@"firstName"];
+//            LIUserInfo[@"lastName"] = [userInfo objectForKey:@"lastName"];
+//            LIUserInfo[@"emailAddress"] = [userInfo objectForKey:@"emailAddress"];
+//            LIUserInfo[@"headline"] = [userInfo objectForKey:@"headline"];
+//            LIUserInfo[@"formattedName"] = [userInfo objectForKey:@"formattedName"];
+//            LIUserInfo[@"id"] = [userInfo objectForKey:@"id"];
+//            LIUserInfo[@"industry"] = [userInfo objectForKey:@"industry"];
+//            LIUserInfo[@"location"] = [userInfo objectForKey:@"location"];
+//            LIUserInfo[@"pictureUrls"] = [userInfo objectForKey:@"pictureUrls"];
 //            
-//            city.text = userInfo[@"location"][@"name"];
-//            country.text =userInfo[@"location"][@"country"][@"code"];
-//            //          _city.text = userInfo[@"numConnections"];
-//            NSLog(@"Successfully retrieved the object???.");
-//            NSLog(@"%@%@%@%@%@", userInfo[@"emailAddress"], userInfo[@"formattedName"], userInfo[@"headline"], userInfo[@"industry"], userInfo[@"numConnections"]);
-        }
-    }];
-    
-    
-}
+//            //    LIUserInfo[@"city"] = [userInfo objectForKey:@"location" [objectForKey: @"name"]];
+//            //    LIUserInfo[@"country"] = [userInfo objectForKey:@"location" [objectForKey]: @"country"];
+//            LIUserInfo[@"publicProfileUrl"] = [userInfo objectForKey:@"publicProfileUrl"];
+//            //    LIUserInfo[@"lastName"] = [userInfo objectForKey:@"lastName"];
+//            NSLog(@"end create object");
+//            [LIUserInfo saveInBackground];
+//
+////            [LIUserInfo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+////                if (succeeded) {
+////                    NSLog(@"save success %@", userInfo);
+////                    //            NSLog(@"emailAddress success %@",
+////                    //                  [userInfo objectForKey:@"emailAddress"]);
+////                    
+////                    // The object has been saved.
+////                } else {
+////                    NSLog(@"save data fail %@", userInfo);
+////                    // There was a problem, check error.description
+////                }
+////            }];
+//
+//            
+//            
+//        } else {
+//            // The find succeeded.
+//            
+//            userInfo[@"userName"] = user.username;
+//            userInfo[@"firstName"] = [userInfo objectForKey:@"firstName"];
+//            userInfo[@"lastName"] = [userInfo objectForKey:@"lastName"];
+//            userInfo[@"emailAddress"] = [userInfo objectForKey:@"emailAddress"];
+//            userInfo[@"headline"] = [userInfo objectForKey:@"headline"];
+//            userInfo[@"formattedName"] = [userInfo objectForKey:@"formattedName"];
+//            userInfo[@"id"] = [userInfo objectForKey:@"id"];
+//            userInfo[@"industry"] = [userInfo objectForKey:@"industry"];
+//            userInfo[@"location"] = [userInfo objectForKey:@"location"];
+//            userInfo[@"pictureUrls"] = [userInfo objectForKey:@"pictureUrls"];
+//            
+//            //    LIUserInfo[@"city"] = [userInfo objectForKey:@"location" [objectForKey: @"name"]];
+//            //    LIUserInfo[@"country"] = [userInfo objectForKey:@"location" [objectForKey]: @"country"];
+//            userInfo[@"publicProfileUrl"] = [userInfo objectForKey:@"publicProfileUrl"];
+//            [userInfo saveInBackground];
+//
+//            
+////            email.text = userInfo[@"emailAddress"];
+////            name.text = userInfo[@"formattedName"];
+////            headline.text = userInfo[@"headline"];
+////            industry.text = userInfo[@"industry"];
+////            
+////            city.text = userInfo[@"location"][@"name"];
+////            country.text =userInfo[@"location"][@"country"][@"code"];
+////            //          _city.text = userInfo[@"numConnections"];
+////            NSLog(@"Successfully retrieved the object???.");
+////            NSLog(@"%@%@%@%@%@", userInfo[@"emailAddress"], userInfo[@"formattedName"], userInfo[@"headline"], userInfo[@"industry"], userInfo[@"numConnections"]);
+//        }
+//    }];
+//    
+//    
+//}
 
 
 -(void)displayData{
@@ -158,9 +159,23 @@
             name.text = userInfo[@"formattedName"];
             headline.text = userInfo[@"headline"];
             industry.text = userInfo[@"industry"];
+            
 
             city.text = userInfo[@"location"][@"name"];
             country.text =userInfo[@"location"][@"country"][@"code"];
+            
+            if (userInfo[@"positions"][@"_total"] == 0) {
+                workExperience.text = @"";
+                workTitle.text = @"";
+                workCompany.text = @"";
+                
+            } else {
+                workExperience.text = @"Work Experience:";
+                
+                workTitle.text = [NSString stringWithFormat:@"Title: %@", userInfo[@"positions"][@"values"][0][@"title"]];
+                
+                workCompany.text = [NSString stringWithFormat:@"Company: %@", userInfo[@"positions"][@"values"][0][@"company"][@"name"]];
+            }
 
             
             if (userInfo[@"pictureUrls"][@"values"][0]){

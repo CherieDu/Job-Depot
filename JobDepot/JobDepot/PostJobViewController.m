@@ -13,7 +13,7 @@
 @end
 
 @implementation PostJobViewController
-@synthesize jobTitle, company, jobDescription, address;
+@synthesize jobTitle, company, jobDescription, address, jobType, numberOfPosition;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -246,6 +246,7 @@
     postedJob[@"company"] = company.text;
     postedJob[@"description"] = jobDescription.text;
     postedJob[@"address"] = address.text;
+    postedJob[@"type"] = jobType;
     [self.view endEditing:YES];
     [postedJob saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {

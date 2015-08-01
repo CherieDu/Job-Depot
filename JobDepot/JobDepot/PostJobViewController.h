@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *address;
 
+@property (strong, nonatomic) IBOutlet UISegmentedControl *jobType;
+@property (strong, nonatomic) IBOutlet UITextField *numberOfPosition;
 
 - (IBAction)PostJobBtnAction:(id)sender;
 - (IBAction)backgroundTap:(id)sender;

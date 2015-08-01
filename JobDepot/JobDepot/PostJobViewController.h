@@ -12,6 +12,9 @@
 #import "MyLoginViewController.h"
 #import "MySignUpViewController.h"
 @interface PostJobViewController : UIViewController<PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate>
+{
+    UIDatePicker *datePicker;
+}
 @property (weak, nonatomic) IBOutlet UITextField *jobTitle;
 @property (weak, nonatomic) IBOutlet UITextField *company;
 @property (weak, nonatomic) IBOutlet UITextView *jobDescription;
@@ -20,6 +23,7 @@
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *jobType;
 @property (strong, nonatomic) IBOutlet UITextField *numberOfPosition;
+@property (strong, nonatomic) IBOutlet UITextField *startDate;
 
 - (IBAction)PostJobBtnAction:(id)sender;
 - (IBAction)backgroundTap:(id)sender;

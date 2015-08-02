@@ -10,6 +10,8 @@
 		9027A4411B5EE1C800CAFED4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9027A4401B5EE1C800CAFED4 /* SearchViewController.m */; };
 		9027A4471B5EE23800CAFED4 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9027A4461B5EE23800CAFED4 /* ResumeViewController.m */; };
 		9062EFFC1B6D895700F5BE7E /* SearchCandidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9062EFFB1B6D895700F5BE7E /* SearchCandidateViewController.m */; };
+		9062EFFF1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9062EFFE1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.m */; };
+		9062F0021B6E06CA00F5BE7E /* CandidateInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9062F0011B6E06CA00F5BE7E /* CandidateInfoViewController.m */; };
 		9074402F1B65704100461154 /* resume.png in Resources */ = {isa = PBXBuildFile; fileRef = 9074402D1B65704100461154 /* resume.png */; };
 		907440301B65704100461154 /* resumeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9074402E1B65704100461154 /* resumeicon.png */; };
 		907440331B6572A000461154 /* Resume-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 907440321B6572A000461154 /* Resume-25.png */; };
@@ -104,6 +106,10 @@
 		9027A4461B5EE23800CAFED4 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeViewController.m; sourceTree = "<group>"; };
 		9062EFFA1B6D895700F5BE7E /* SearchCandidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCandidateViewController.h; sourceTree = "<group>"; };
 		9062EFFB1B6D895700F5BE7E /* SearchCandidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCandidateViewController.m; sourceTree = "<group>"; };
+		9062EFFD1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateSearchResultTableViewController.h; sourceTree = "<group>"; };
+		9062EFFE1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateSearchResultTableViewController.m; sourceTree = "<group>"; };
+		9062F0001B6E06CA00F5BE7E /* CandidateInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateInfoViewController.h; sourceTree = "<group>"; };
+		9062F0011B6E06CA00F5BE7E /* CandidateInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateInfoViewController.m; sourceTree = "<group>"; };
 		9074402D1B65704100461154 /* resume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resume.png; path = ../../images/resume.png; sourceTree = "<group>"; };
 		9074402E1B65704100461154 /* resumeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resumeicon.png; path = ../../images/resumeicon.png; sourceTree = "<group>"; };
 		907440321B6572A000461154 /* Resume-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resume-25.png"; sourceTree = "<group>"; };
@@ -375,6 +381,10 @@
 				90F901131B6C4EA800C01CA4 /* JobInfoViewController.m */,
 				9062EFFA1B6D895700F5BE7E /* SearchCandidateViewController.h */,
 				9062EFFB1B6D895700F5BE7E /* SearchCandidateViewController.m */,
+				9062EFFD1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.h */,
+				9062EFFE1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.m */,
+				9062F0001B6E06CA00F5BE7E /* CandidateInfoViewController.h */,
+				9062F0011B6E06CA00F5BE7E /* CandidateInfoViewController.m */,
 			);
 			name = Employer;
 			sourceTree = "<group>";
@@ -672,6 +682,7 @@
 				909B81BD1B68471400CEEF79 /* CBAPIHelper.m in Sources */,
 				9062EFFC1B6D895700F5BE7E /* SearchCandidateViewController.m in Sources */,
 				909B81C71B68473200CEEF79 /* CBJobCategory.m in Sources */,
+				9062F0021B6E06CA00F5BE7E /* CandidateInfoViewController.m in Sources */,
 				90F9010E1B6C14C300C01CA4 /* HistoryPostedJobsTableViewController.m in Sources */,
 				90F901111B6C16DE00C01CA4 /* FetchPostedJobsViewController.m in Sources */,
 				9027A4471B5EE23800CAFED4 /* ResumeViewController.m in Sources */,
@@ -680,6 +691,7 @@
 				90BC77521B65A281003B7089 /* MySignUpViewController.m in Sources */,
 				909B81A61B6846CE00CEEF79 /* CBJobSearchResult.m in Sources */,
 				909B81881B68070D00CEEF79 /* PostJobViewController.m in Sources */,
+				9062EFFF1B6DF84E00F5BE7E /* CandidateSearchResultTableViewController.m in Sources */,
 				908AD6081B618811002A3389 /* LinkedInAppSettings.m in Sources */,
 				9027A4411B5EE1C800CAFED4 /* SearchViewController.m in Sources */,
 				908AD60B1B618811002A3389 /* LinkedInServiceManager.m in Sources */,

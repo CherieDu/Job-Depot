@@ -43,8 +43,14 @@
     LIUserInfo[@"formattedName"] = [userInfo objectForKey:@"formattedName"];
     LIUserInfo[@"id"] = [userInfo objectForKey:@"id"];
     LIUserInfo[@"industry"] = [userInfo objectForKey:@"industry"];
-    LIUserInfo[@"positions"] = [userInfo objectForKey:@"positions"];
-    LIUserInfo[@"location"] = [userInfo objectForKey:@"location"];
+    LIUserInfo[@"positionCompany"] = userInfo[@"positions"][@"values"][0][@"company"][@"name"];
+    LIUserInfo[@"positionTitle"] = userInfo[@"positions"][@"values"][0][@"title"];
+    
+    LIUserInfo[@"positions"] = userInfo[@"positions"];
+    //[userInfo objectForKey:@"positions"];
+    LIUserInfo[@"country"] = userInfo[@"location"][@"country"][@"code"];
+    LIUserInfo[@"city"] = userInfo[@"location"][@"name"];
+//    [userInfo objectForKey:@"location"];
     LIUserInfo[@"pictureUrls"] = [userInfo objectForKey:@"pictureUrls"];
     
     //    LIUserInfo[@"city"] = [userInfo objectForKey:@"location" [objectForKey: @"name"]];
@@ -161,8 +167,11 @@
             industry.text = userInfo[@"industry"];
             
 
-            city.text = userInfo[@"location"][@"name"];
-            country.text =userInfo[@"location"][@"country"][@"code"];
+//            city.text = userInfo[@"location"][@"name"];
+//            country.text =userInfo[@"location"][@"country"][@"code"];
+            city.text = userInfo[@"city"];
+            country.text = userInfo[@"country"];
+
             
             if (userInfo[@"positions"][@"_total"] == 0) {
                 workExperience.text = @"";
@@ -172,9 +181,9 @@
             } else {
                 workExperience.text = @"Work Experience:";
                 
-                workTitle.text = [NSString stringWithFormat:@"Title: %@", userInfo[@"positions"][@"values"][0][@"title"]];
+                workTitle.text = [NSString stringWithFormat:@"Title: %@", userInfo[@"positionTitle"]];
                 
-                workCompany.text = [NSString stringWithFormat:@"Company: %@", userInfo[@"positions"][@"values"][0][@"company"][@"name"]];
+                workCompany.text = [NSString stringWithFormat:@"Company: %@", userInfo[@"positionCompany"]];
             }
 
             

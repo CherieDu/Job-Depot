@@ -18,10 +18,10 @@
 @implementation HistoryPostedJobsTableViewController
 
 
--(void)setJobs: (NSArray *) postedJobs{
-    _postedJobs = postedJobs;
-    [self.tableView reloadData];
-}
+//-(void)setJobs: (NSArray *) postedJobs{
+//    _postedJobs = postedJobs;
+//    [self.tableView reloadData];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

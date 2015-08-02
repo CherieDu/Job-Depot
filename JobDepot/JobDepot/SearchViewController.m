@@ -42,12 +42,12 @@ NSString *jobtitle;
     
     jobs = [[NSMutableArray alloc] initWithCapacity:100];
     // Do any additional setup after loading the view.
-    PFObject *postedjobs = [PFObject objectWithClassName:@"PostedJob"];
+//    PFObject *postedjobs = [PFObject objectWithClassName:@"PostedJob"];
     PFQuery *query = [PFQuery queryWithClassName:@"PostedJob"];
     [query getFirstObjectInBackgroundWithBlock:^(PFObject *postedjobs, NSError *error) {
         if (!postedjobs) {
             NSLog(@"failed.");
-            
+
         } else {
             jobtitle = postedjobs[@"title"];
             NSLog(@"title: %@", jobtitle);
@@ -76,7 +76,7 @@ NSString *jobtitle;
     
     CBJob *tmpJob;
     
-    NSString *jobtitles;
+//    NSString *jobtitles;
     
     jobs = [[NSMutableArray alloc] initWithCapacity:40];
     

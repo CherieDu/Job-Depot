@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
-@interface AccountViewController : UIViewController
+@interface AccountViewController : UIViewController<UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *avatarAcount;
 @property (weak, nonatomic) IBOutlet UILabel *usernameAccount;
 @property (weak, nonatomic) IBOutlet UILabel *emailAccount;
 - (IBAction)logoutBtn:(id)sender;
 
+- (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender;
 
 
 @end

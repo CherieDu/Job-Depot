@@ -9,11 +9,22 @@
 #import "AccountViewController.h"
 #import "ViewController.h"
 @interface AccountViewController ()
+@property (nonatomic, strong) UIImagePickerController *imagePicker;
 
 @end
 
 @implementation AccountViewController
 @synthesize emailAccount, avatarAcount, usernameAccount;
+
+-(UIImagePickerController *)imagePicker{
+    if (_imagePicker == nil) {
+        _imagePicker = [[UIImagePickerController alloc]init];
+        _imagePicker.delegate = self;
+    }
+    
+    return _imagePicker;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -125,4 +136,73 @@
     
     
 }
+
+- (IBAction)didTapPhoto:(UITapGestureRecognizer *)sender {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        NSLog(@"No Camera Detected");
+        return;
+    }
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take a Photo", @"Use Photo Library", nil];
+    
+    [actionSheet showInView:self.view];
+    
+    
+}
+
+-(void)pickPhotoFromLibrary{
+    self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self.navigationController presentViewController:self.imagePicker animated:YES completion:nil];
+    
+    
+}
+
+-(void) takePhotoWithCamera{
+    self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self.navigationController presentViewController:self.imagePicker animated:YES completion:nil];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        return;
+    }
+    
+    switch (buttonIndex) {
+        case 0:
+            [self takePhotoWithCamera];
+            break;
+        case 1:
+            [self pickPhotoFromLibrary];
+        default:
+            break;
+    }
+}
+
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    self.avatarAcount.image = image;
+    
+//    NSData *data = [@"Working at Parse is great!" dataUsingEncoding:NSUTF8StringEncoding];
+//    NSData *imageData = UIImagePNGRepresentation(image);
+//    PFFile *imageFile = [PFFile fileWithName:@"Profileimage.png" data:imageData];
+//    
+//    [imageFile saveInBackground];
+//    
+//    PFQuery *query = [PFQuery queryWithClassName:@"LIUserInfo"];
+//    [query whereKey:@"userName" equalTo:[PFUser currentUser].username];
+//    
+//    NSArray* candidateArray = [query findObjects];
+//    for (int i = 0; i < [candidateArray count]; i++) {
+//        candidateArray[i][@"avatar"] =imageFile;
+//    }
+    
+}
+
+
+
 @end
